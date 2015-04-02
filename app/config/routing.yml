@@ -1,0 +1,4 @@
+mew_pipe_user:
+    resource: "@MewPipeUserBundle/Resources/config/routing.yml"
+    prefix:   /user
+

@@ -1,0 +1,3 @@
+mew_pipe_user_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: MewPipeUserBundle:Default:index }
