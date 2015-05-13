@@ -17,6 +17,8 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new MewPipe\UserBundle\MewPipeUserBundle(),
+            new FOS\UserBundle\FOSUserBundle(),
+            new MewPipe\VideoBundle\MewPipeVideoBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

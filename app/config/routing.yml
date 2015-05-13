@@ -1,4 +1,11 @@
+mew_pipe_video:
+    resource: "@MewPipeVideoBundle/Resources/config/routing.yml"
+    prefix:   /
+
 mew_pipe_user:
     resource: "@MewPipeUserBundle/Resources/config/routing.yml"
     prefix:   /user
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
 
