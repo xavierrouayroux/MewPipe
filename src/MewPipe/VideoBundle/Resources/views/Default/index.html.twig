@@ -1,1 +1,55 @@
-Hello {{ name }}!
+{% extends '::base.html.twig' %}
+
+ {% block body %}
+ <div class="success">
+     Hello world home!
+ </div>
+
+     <div class="row">
+         <div class="panel-heading">
+             <h4>
+                 titre panel heading
+             </h4>
+         </div>
+         <div class="panel-body">
+             <div class="dataTables_wrapper" role="grid">
+
+                 <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-hover table-bordered datatables paginated">
+                     <thead>
+                     <tr>
+                         <th>Col 1</th>
+                         <th>Col 2</th>
+                     </tr>
+                     </thead>
+                     <tbody>
+                     <tr>
+                         <th>Cell 1</th>
+                         <th>Cell 2</th>
+                     </tr>
+                     </tbody>
+                 </table>
+             </div>
+         </div>
+     </div>
+
+         <div class="row">
+             <div class="panel-heading">
+                 <h4>
+                     titre panel heading
+                 </h4>
+             </div>
+             <div class="panel-body">
+         <div class="col-md-8" style="background: wheat">
+                 <div class="videoUiWrapper thumbnail">
+                     <video width="100%" id="vdHotPress" controls>
+                         <!-- set width to 100% and add controls for play and volume buttons-->
+                         <source src=http://techslides.com/demos/sample-videos/small.mp4 type=video/mp4>
+                         Your browser does not support the video tag.
+                     </video>
+             </div>
+         </div>
+     </div>
+             </div>
+
+ {% endblock %}
+

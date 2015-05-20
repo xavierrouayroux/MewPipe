@@ -3,11 +3,88 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            {% stylesheets
+            'assets/css/styles.min.css'
+            'http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600'
+            'assets/plugins/form-boostrap-switch/bootstrap-switch.min.css'
+            'assets/css/font-awesome.min.css'
+            'assets/css/jquery.dataTables.min.css'
+            'assets/js/jquery-ui.min.css'
+            'assets/css/bootstrap-tagsinput.css'
+            'assets/css/timeout-dialog.css'
+            filter='cssrewrite'
+            %}
+            <link rel="stylesheet" href="{{ asset_url }}" />
+            {% endstylesheets %}
+        {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body>
-        {% block body %}{% endblock %}
+
         {% block javascripts %}{% endblock %}
+
+        {#
+        <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+        <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
+        #}
+
+
+        {% javascripts
+        'assets/js/constants.js'
+        'assets/js/jquery-1.10.2.min.js'
+        'assets/js/jqueryui-1.10.3.min.js'
+        'assets/js/jquery.blockUI.min.js'
+        'assets/js/bootstrap.min.js'
+        'assets/js/enquire.js'
+        'assets/js/jquery.cookie.js'
+        'assets/js/jquery.nicescroll.min.js'
+        'assets/js/bootstrap-tagsinput.js'
+        'assets/plugins/codeprettifier/prettify.js'
+        'assets/plugins/form-boostrap-switch/bootstrap-switch.min.js'
+        'assets/js/placeholdr.js'
+        'assets/js/application.js'
+        'assets/js/jquery.dataTables.js'
+        'assets/js/jquery.maskMoney.min.js'
+        'assets/js/jquery-ui.min.js'
+        'assets/js/i18n/*'
+        'assets/js/timeout-dialog.js'
+        'assets/plugins/dmuploader/dmuploader.min.js'
+        'assets/js/jquery.creditCardValidator.js'
+        'assets/js/pwstrength.js'
+
+        %}
+        <script src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+    </head>
+
+    <body class=" ">
+  {#{% include('::header.html.twig') %} #}
+
+    <div id="page-container">
+       {# {% include('::menu.html.twig') %} #}
+
+        <div id="page-content">
+            <div id='wrap'>
+                <div id="page-heading">
+                    {% block option %}{% endblock %}
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-sky">
+                              {#{% include 'OlkyCommonBundle:misc:flashbag.html.twig' %} #}
+
+                                {% block body %}{% endblock %}
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- container -->
+            </div> <!--wrap -->
+        </div> <!-- page-content -->
+
+    {# {% include '::footer.html.twig' with { 'behaviour' : 'scrollToTop' } %} #}
+    </div> <!-- page-container -->
+
+
+
     </body>
 </html>

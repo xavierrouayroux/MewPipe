@@ -18,6 +18,8 @@
       <parameter key="SensioFrameworkExtraBundle">Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle</parameter>
       <parameter key="MewPipeUserBundle">MewPipe\UserBundle\MewPipeUserBundle</parameter>
       <parameter key="FOSUserBundle">FOS\UserBundle\FOSUserBundle</parameter>
+      <parameter key="StofDoctrineExtensionsBundle">Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle</parameter>
+      <parameter key="MewPipeVideoBundle">MewPipe\VideoBundle\MewPipeVideoBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
       <parameter key="SensioGeneratorBundle">Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle</parameter>
@@ -448,7 +450,7 @@
     <parameter key="assetic.write_to">/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/app/../web</parameter>
     <parameter key="assetic.variables" type="collection"/>
     <parameter key="assetic.java.bin">/usr/bin/java</parameter>
-    <parameter key="assetic.node.bin">/usr/local/bin/node</parameter>
+    <parameter key="assetic.node.bin">/usr/bin/node</parameter>
     <parameter key="assetic.ruby.bin">/usr/bin/ruby</parameter>
     <parameter key="assetic.sass.bin">/usr/bin/sass</parameter>
     <parameter key="assetic.filter.cssrewrite.class">Assetic\Filter\CssRewriteFilter</parameter>
@@ -607,6 +609,28 @@
       <parameter>ResetPassword</parameter>
       <parameter>Default</parameter>
     </parameter>
+    <parameter key="stof_doctrine_extensions.event_listener.locale.class">Stof\DoctrineExtensionsBundle\EventListener\LocaleListener</parameter>
+    <parameter key="stof_doctrine_extensions.event_listener.logger.class">Stof\DoctrineExtensionsBundle\EventListener\LoggerListener</parameter>
+    <parameter key="stof_doctrine_extensions.event_listener.blame.class">Stof\DoctrineExtensionsBundle\EventListener\BlameListener</parameter>
+    <parameter key="stof_doctrine_extensions.uploadable.manager.class">Stof\DoctrineExtensionsBundle\Uploadable\UploadableManager</parameter>
+    <parameter key="stof_doctrine_extensions.uploadable.mime_type_guesser.class">Stof\DoctrineExtensionsBundle\Uploadable\MimeTypeGuesserAdapter</parameter>
+    <parameter key="stof_doctrine_extensions.uploadable.default_file_info.class">Stof\DoctrineExtensionsBundle\Uploadable\UploadedFileInfo</parameter>
+    <parameter key="stof_doctrine_extensions.default_locale">en_US</parameter>
+    <parameter key="stof_doctrine_extensions.default_file_path">/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/app/../web/uploads</parameter>
+    <parameter key="stof_doctrine_extensions.translation_fallback">false</parameter>
+    <parameter key="stof_doctrine_extensions.persist_default_translation">false</parameter>
+    <parameter key="stof_doctrine_extensions.skip_translation_on_load">false</parameter>
+    <parameter key="stof_doctrine_extensions.uploadable.validate_writable_directory">true</parameter>
+    <parameter key="stof_doctrine_extensions.listener.translatable.class">Gedmo\Translatable\TranslatableListener</parameter>
+    <parameter key="stof_doctrine_extensions.listener.timestampable.class">Gedmo\Timestampable\TimestampableListener</parameter>
+    <parameter key="stof_doctrine_extensions.listener.blameable.class">Gedmo\Blameable\BlameableListener</parameter>
+    <parameter key="stof_doctrine_extensions.listener.sluggable.class">Gedmo\Sluggable\SluggableListener</parameter>
+    <parameter key="stof_doctrine_extensions.listener.tree.class">Gedmo\Tree\TreeListener</parameter>
+    <parameter key="stof_doctrine_extensions.listener.loggable.class">Gedmo\Loggable\LoggableListener</parameter>
+    <parameter key="stof_doctrine_extensions.listener.sortable.class">Gedmo\Sortable\SortableListener</parameter>
+    <parameter key="stof_doctrine_extensions.listener.softdeleteable.class">Gedmo\SoftDeleteable\SoftDeleteableListener</parameter>
+    <parameter key="stof_doctrine_extensions.listener.uploadable.class">Gedmo\Uploadable\UploadableListener</parameter>
+    <parameter key="stof_doctrine_extensions.listener.reference_integrity.class">Gedmo\ReferenceIntegrity\ReferenceIntegrityListener</parameter>
     <parameter key="web_profiler.controller.profiler.class">Symfony\Bundle\WebProfilerBundle\Controller\ProfilerController</parameter>
     <parameter key="web_profiler.controller.router.class">Symfony\Bundle\WebProfilerBundle\Controller\RouterController</parameter>
     <parameter key="web_profiler.controller.exception.class">Symfony\Bundle\WebProfilerBundle\Controller\ExceptionController</parameter>
@@ -675,6 +699,55 @@
     </parameter>
   </parameters>
   <services>
+    <service id="extension.listener" class="MewPipe\UserBundle\Listener\DoctrineExtensionListener">
+      <tag name="kernel.event_listener" event="kernel.request" method="onLateKernelRequest" priority="-10"/>
+      <tag name="kernel.event_listener" event="kernel.request" method="onKernelRequest"/>
+      <call method="setContainer">
+        <argument type="service" id="service_container"/>
+      </call>
+    </service>
+    <service id="gedmo.listener.tree" class="Gedmo\Tree\TreeListener">
+      <tag name="doctrine.event_subscriber" connection="default"/>
+      <call method="setAnnotationReader">
+        <argument type="service" id="annotation_reader"/>
+      </call>
+    </service>
+    <service id="gedmo.listener.translatable" class="Gedmo\Translatable\TranslatableListener">
+      <tag name="doctrine.event_subscriber" connection="default"/>
+      <call method="setAnnotationReader">
+        <argument type="service" id="annotation_reader"/>
+      </call>
+      <call method="setDefaultLocale">
+        <argument>en</argument>
+      </call>
+      <call method="setTranslationFallback">
+        <argument>false</argument>
+      </call>
+    </service>
+    <service id="gedmo.listener.timestampable" class="Gedmo\Timestampable\TimestampableListener">
+      <tag name="doctrine.event_subscriber" connection="default"/>
+      <call method="setAnnotationReader">
+        <argument type="service" id="annotation_reader"/>
+      </call>
+    </service>
+    <service id="gedmo.listener.sluggable" class="Gedmo\Sluggable\SluggableListener">
+      <tag name="doctrine.event_subscriber" connection="default"/>
+      <call method="setAnnotationReader">
+        <argument type="service" id="annotation_reader"/>
+      </call>
+    </service>
+    <service id="gedmo.listener.sortable" class="Gedmo\Sortable\SortableListener">
+      <tag name="doctrine.event_subscriber" connection="default"/>
+      <call method="setAnnotationReader">
+        <argument type="service" id="annotation_reader"/>
+      </call>
+    </service>
+    <service id="gedmo.listener.loggable" class="Gedmo\Loggable\LoggableListener">
+      <tag name="doctrine.event_subscriber" connection="default"/>
+      <call method="setAnnotationReader">
+        <argument type="service" id="annotation_reader"/>
+      </call>
+    </service>
     <service id="controller_name_converter" class="Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser" public="false">
       <tag name="monolog.logger" channel="request"/>
       <argument type="service" id="kernel"/>
@@ -2027,6 +2100,12 @@
         <argument>zh_CN</argument>
         <argument>validators</argument>
       </call>
+      <call method="addResource">
+        <argument>xlf</argument>
+        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/VideoBundle/Resources/translations/messages.fr.xlf</argument>
+        <argument>fr</argument>
+        <argument>messages</argument>
+      </call>
     </service>
     <service id="translation.loader.php" class="Symfony\Component\Translation\Loader\PhpFileLoader">
       <tag name="translation.loader" alias="php"/>
@@ -2213,6 +2292,22 @@
       </argument>
       <argument type="service" id="debug.stopwatch"/>
       <argument type="service" id="monolog.logger.event" on-invalid="null"/>
+      <call method="addListenerService">
+        <argument>kernel.request</argument>
+        <argument type="collection">
+          <argument>extension.listener</argument>
+          <argument>onLateKernelRequest</argument>
+        </argument>
+        <argument>-10</argument>
+      </call>
+      <call method="addListenerService">
+        <argument>kernel.request</argument>
+        <argument type="collection">
+          <argument>extension.listener</argument>
+          <argument>onKernelRequest</argument>
+        </argument>
+        <argument>0</argument>
+      </call>
       <call method="addListenerService">
         <argument>kernel.controller</argument>
         <argument type="collection">
@@ -2992,7 +3087,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>5553265b0e37f</argument>
+            <argument>555c8096b2f8f</argument>
           </service>
         </argument>
       </argument>
@@ -3264,7 +3359,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.context"/>
-            <argument>5553265b0e37f</argument>
+            <argument>555c8096b2f8f</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
           </service>
         </argument>
@@ -3694,6 +3789,27 @@
               </service>
             </argument>
           </call>
+          <call method="addEventSubscriber">
+            <argument type="service" id="gedmo.listener.sortable"/>
+          </call>
+          <call method="addEventSubscriber">
+            <argument type="service" id="gedmo.listener.translatable"/>
+          </call>
+          <call method="addEventSubscriber">
+            <argument type="service" id="gedmo.listener.tree"/>
+          </call>
+          <call method="addEventSubscriber">
+            <argument type="service" id="gedmo.listener.timestampable"/>
+          </call>
+          <call method="addEventSubscriber">
+            <argument type="service" id="gedmo.listener.loggable"/>
+          </call>
+          <call method="addEventSubscriber">
+            <argument type="service" id="gedmo.listener.sluggable"/>
+          </call>
+          <call method="addEventSubscriber">
+            <argument type="service" id="stof_doctrine_extensions.listener.uploadable"/>
+          </call>
         </service>
       </argument>
       <argument type="collection"/>
@@ -3740,7 +3856,12 @@
         <service class="Doctrine\ORM\Configuration" public="false">
           <call method="setEntityNamespaces">
             <argument type="collection">
+              <argument key="GedmoTranslatable">Gedmo\Translatable\Entity</argument>
+              <argument key="GedmoTranslator">Gedmo\Translator\Entity</argument>
+              <argument key="GedmoLoggable">Gedmo\Loggable\Entity</argument>
+              <argument key="GedmoTree">Gedmo\Tree\Entity</argument>
               <argument key="MewPipeUserBundle">MewPipe\UserBundle\Entity</argument>
+              <argument key="MewPipeVideoBundle">MewPipe\VideoBundle\Entity</argument>
             </argument>
           </call>
           <call method="setMetadataCacheImpl">
@@ -3760,11 +3881,96 @@
                     <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
                       <argument type="service" id="annotation_reader"/>
                       <argument type="collection">
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Translatable/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Translator/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Loggable/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity</argument>
                         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/UserBundle/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/VideoBundle/Entity</argument>
+                      </argument>
+                    </service>
+                  </argument>
+                  <argument>Gedmo\Translatable\Entity</argument>
+                </call>
+                <call method="addDriver">
+                  <argument type="service">
+                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
+                      <argument type="service" id="annotation_reader"/>
+                      <argument type="collection">
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Translatable/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Translator/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Loggable/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/UserBundle/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/VideoBundle/Entity</argument>
+                      </argument>
+                    </service>
+                  </argument>
+                  <argument>Gedmo\Translator\Entity</argument>
+                </call>
+                <call method="addDriver">
+                  <argument type="service">
+                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
+                      <argument type="service" id="annotation_reader"/>
+                      <argument type="collection">
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Translatable/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Translator/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Loggable/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/UserBundle/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/VideoBundle/Entity</argument>
+                      </argument>
+                    </service>
+                  </argument>
+                  <argument>Gedmo\Loggable\Entity</argument>
+                </call>
+                <call method="addDriver">
+                  <argument type="service">
+                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
+                      <argument type="service" id="annotation_reader"/>
+                      <argument type="collection">
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Translatable/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Translator/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Loggable/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/UserBundle/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/VideoBundle/Entity</argument>
+                      </argument>
+                    </service>
+                  </argument>
+                  <argument>Gedmo\Tree\Entity</argument>
+                </call>
+                <call method="addDriver">
+                  <argument type="service">
+                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
+                      <argument type="service" id="annotation_reader"/>
+                      <argument type="collection">
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Translatable/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Translator/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Loggable/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/UserBundle/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/VideoBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
                   <argument>MewPipe\UserBundle\Entity</argument>
+                </call>
+                <call method="addDriver">
+                  <argument type="service">
+                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
+                      <argument type="service" id="annotation_reader"/>
+                      <argument type="collection">
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Translatable/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Translator/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Loggable/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/UserBundle/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/VideoBundle/Entity</argument>
+                      </argument>
+                    </service>
+                  </argument>
+                  <argument>MewPipe\VideoBundle\Entity</argument>
                 </call>
                 <call method="addDriver">
                   <argument type="service">
@@ -3950,6 +4156,25 @@
       <tag name="kernel.event_subscriber"/>
       <argument type="service" id="router"/>
       <argument>86400</argument>
+    </service>
+    <service id="stof_doctrine_extensions.listener.uploadable" class="Gedmo\Uploadable\UploadableListener" public="false">
+      <tag name="doctrine.event_subscriber" connection="default"/>
+      <argument type="service">
+        <service class="Stof\DoctrineExtensionsBundle\Uploadable\MimeTypeGuesserAdapter" public="false"/>
+      </argument>
+      <call method="setAnnotationReader">
+        <argument type="service" id="annotation_reader"/>
+      </call>
+      <call method="setDefaultFileInfoClass">
+        <argument>Stof\DoctrineExtensionsBundle\Uploadable\UploadedFileInfo</argument>
+      </call>
+      <call method="setDefaultPath">
+        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/app/../web/uploads</argument>
+      </call>
+    </service>
+    <service id="stof_doctrine_extensions.uploadable.manager" class="Stof\DoctrineExtensionsBundle\Uploadable\UploadableManager">
+      <argument type="service" id="stof_doctrine_extensions.listener.uploadable"/>
+      <argument>Stof\DoctrineExtensionsBundle\Uploadable\UploadedFileInfo</argument>
     </service>
     <service id="web_profiler.controller.profiler" class="Symfony\Bundle\WebProfilerBundle\Controller\ProfilerController">
       <argument type="service" id="router" on-invalid="null"/>
@@ -4297,6 +4522,10 @@
       <call method="addPath">
         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/friendsofsymfony/user-bundle/Resources/views</argument>
         <argument>FOSUser</argument>
+      </call>
+      <call method="addPath">
+        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/VideoBundle/Resources/views</argument>
+        <argument>MewPipeVideo</argument>
       </call>
       <call method="addPath">
         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>

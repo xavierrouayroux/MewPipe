@@ -1,3 +1,7 @@
 mew_pipe_video_homepage:
-    path:     /hello/{name}
+    path:     /home
     defaults: { _controller: MewPipeVideoBundle:Default:index }
+
+mew_pipe_video_upload:
+    path:     /upload
+    defaults: { _controller: MewPipeVideoBundle:Default:UploadVideo }

@@ -2,19 +2,735 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b572eba-12f0-48c2-a8a7-b0917c85fb9a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MewPipe/UserBundle/Entity/User.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/jcrop/css/Jcrop.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-select2/select2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-select2/select2x2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/images/ui-bg_diagonals-thick_18_b81900_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/images/ui-bg_diagonals-thick_20_666666_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/images/ui-bg_flat_10_000000_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/images/ui-bg_glass_100_f6f6f6_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/images/ui-bg_glass_100_fdf5ce_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/images/ui-bg_glass_65_ffffff_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/images/ui-bg_gloss-wave_35_f6a828_500x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/images/ui-icons_222222_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/images/ui-icons_228ef1_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/images/ui-icons_ef8c08_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/images/ui-icons_ffd27a_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/zoomico.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/6f/25/04d877d7228a046106b7f8266b849398ee87230bdf28cd9ae799a91d9e99.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/9b/1a/05c8d52eb7dcf1617fae1e9de7722842bd97b2708c9614ef1f6f5d524ff1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/90/cf/09e943cfd76fe0f5e7c9b52067a263c284ff1528f705bf523101b7ba68ae.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/92/dc/0bbd2ba7cd2d9654dfdf414a10494d34c31c6e956d43f6bae1368e0edb2b.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/7a/8a/0ec57fcc21a2715b0ae40cde8c89abc133cf6719d51da04a0b02408e9d03.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/dev/twig/83/0e/1215076b598be5e0d5dc308ae743ed5f8b5b414bb2e3a338a93744ccac34.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/83/0e/1215076b598be5e0d5dc308ae743ed5f8b5b414bb2e3a338a93744ccac34.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/dev/twig/c1/8b/16895945bf9fd5fff8804f91d5031d3875c038f8882a20d230eb11e51448.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/c1/8b/16895945bf9fd5fff8804f91d5031d3875c038f8882a20d230eb11e51448.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/dev/twig/4f/a7/1ea60adfd141a500519b909108658a20e4b5003e158890098c0028e8b636.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/4f/a7/1ea60adfd141a500519b909108658a20e4b5003e158890098c0028e8b636.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/b1/53/20c964d74e10c8ccfb0f8f0ad57f612d4d2b7469f5fa712247c3e3fe9a34.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/35/d7/2272ae38d73d464734e87bd509ca10d8be2f08307d789294570b5c560335.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/15/6d/26c24592db83188259f0d76653bd20dd8cc950afc6107e3da7db1ea37fb7.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/0d/4d/2702f38b421f88e0be5c6aaab21910539a8e89b5700aef7bda81fc8b8f00.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/dev/twig/90/dc/277ebcf27832d8aa480bdec647320458c15604ab6f270c28e4859e9fa3dc.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/90/dc/277ebcf27832d8aa480bdec647320458c15604ab6f270c28e4859e9fa3dc.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/c3/76/2a881f8296ec0dffd35c75510e2b74cf60695564df0cc6811b1fc7649092.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/71/25/2c6f29484eb99b6a2f76d7043f1afb18a62a632bd0ff65922bab064fa1dc.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/07/4c/31dbb9485e9fb8533bffc3f9cf2568284f3711e6ce38ce282344a5f1e387.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/a5/e6/32cdbf885655fcffc9f4ca5b04e635a348ab42dd599c0bfb481a60a1ccbb.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/6d/fd/403112f707a2388cf678e0ea5db1429b016bc26bef145f9a3d8f5c7f8683.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/ff/4b/428dceb35a13371c32ceabe1d5cdfbec6544d5914930c0516d66b0a51ad3.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/assetic/config/4/43a80f0e087752a2d4724591f85aa0e1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/bf/fe/50cf35f6ed69f136feb111e0c0786857d62b89087748b87d122c5f341bf7.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/dev/twig/e1/aa/5290879a12e3bf10a6293a9f0547fac7acb246d3dd9acc43da748d71b068.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/e1/aa/5290879a12e3bf10a6293a9f0547fac7acb246d3dd9acc43da748d71b068.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/e4/de/5469f01544f20a7df9a56a1c35a83a932fe90396b2713e148aba6aafba4f.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/dev/twig/1a/83/57d845fa919e88b72e87146d61a247ef32a3814d617868fe8b37855ffc2d.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/1a/83/57d845fa919e88b72e87146d61a247ef32a3814d617868fe8b37855ffc2d.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/77/b6/61b20704afe8d4284c3350a47ac42dd5810089549ac6005e6a90ba0b2efe.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/f5/73/62d0729d327da377a1463fc87c20ac922dfc965c63ca65b3548c2d722f44.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/2f/57/634b2977b389df3a13d7b1abcb33e541d142b018d24a292cb97f4b6ac954.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_application_13.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_bootstrap-switch.min_11.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_bootstrap-tagsinput_9.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_bootstrap.min_5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_constants_1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_dmuploader.min_19.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_enquire_6.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_jquery-1.10.2.min_2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_jquery-ui.min_16.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_jquery.blockUI.min_4.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_jquery.cookie_7.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_jquery.creditCardValidator_20.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_jquery.dataTables_14.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_jquery.maskMoney.min_15.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_jquery.nicescroll.min_8.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_jqueryui-1.10.3.min_3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-af_1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-ar-DZ_2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-ar_3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-az_4.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-be_5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-bg_6.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-bs_7.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-ca_8.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-cs_9.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-cy-GB_10.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-da_11.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-de_12.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-el_13.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-en-AU_14.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-en-GB_15.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-en-NZ_16.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-eo_17.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-es_18.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-et_19.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-eu_20.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-fa_21.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-fi_22.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-fo_23.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-fr-CA_24.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-fr-CH_25.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-fr_26.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-gl_27.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-he_28.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-hi_29.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-hr_30.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-hu_31.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-hy_32.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-id_33.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-is_34.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-it-CH_35.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-it_36.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-ja_37.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-ka_38.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-kk_39.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-km_40.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-ko_41.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-ky_42.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-lb_43.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-lt_44.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-lv_45.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-mk_46.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-ml_47.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-ms_48.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-nb_49.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-nl-BE_50.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-nl_51.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-nn_52.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-no_53.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-pl_54.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-pt-BR_55.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-pt_56.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-rm_57.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-ro_58.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-ru_59.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-sk_60.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-sl_61.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-sq_62.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-sr-SR_63.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-sr_64.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-sv_65.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-ta_66.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-th_67.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-tj_68.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-tr_69.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-uk_70.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-vi_71.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-zh-CN_72.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-zh-HK_73.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_part_17_datepicker-zh-TW_74.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_placeholdr_12.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_prettify_10.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_pwstrength_21.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/659c308_timeout-dialog_18.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/c6/02/77d77e049452980e37ed9f334dd1225efacdaa96e781085bac2cab450650.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/0c/80/7cd65b36f5472ea5129bd43080a8c3c6439f355c2618f243602ed68e08d6.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/d2/45/8e8ed319803e5e31ccc414846e2021602497dd54d46e8dd6bd280158fbaf.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/85/bf/9a629c5c039347dc81f893d5537e20963f2ab38e626d9db931b01cade91a.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/e1/bf/9c4ddb4b752cb138187b1b8a0791a3e7cd391a4b8cfc4416bed7230f0a4a.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/f7/3c/9cb0e866d289b61a61fff87b400cd1edbb491dd2ad29821f9e55d82dae86.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/charts-flot/API.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MewPipe/VideoBundle/Entity/Comments.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MewPipe/VideoBundle/Repository/CommentsRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MewPipe/UserBundle/Listener/DoctrineExtensionListener.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/charts-flot/FAQ.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-parsley/LICENCE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-xeditable/LICENSE-MIT" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-fseditor/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-tokenfield/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/charts-flot/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/bootstro.js/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-colorpicker/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-select2/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/jcrop/MIT-LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/charts-flot/NEWS.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/charts-flot/PLUGINS.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/bootstro.js/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/charts-flot/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/charts-morrisjs/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/datepaginator/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-fseditor/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-inputmask/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-markdown/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-parsley/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-select2/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-tokenfield/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-validation/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-xeditable/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/jcrop/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/jquery-editable/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/knob/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/mixitup/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/progress-skylo/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/easypiechart/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-parsley/TODO.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/datatables/TableTools.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MewPipe/VideoBundle/Entity/Video.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MewPipe/VideoBundle/Repository/VideoRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MewPipe/VideoBundle/Form/VideoType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/doctrine/orm/Proxies/__CG__MewPipeUserBundleEntityUser.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/9b/a0/a0c840c64312b12e72b5a2476264acc0ce9995e4e75e16dd22569e5e70f8.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/1b/b4/a63c02a798b1c965367dd5930f6519f2da1f87bf1a3891b752b1762fee34.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/1b/3d/aa0a8e9d34ac71fd7867a27dc93404c72bf197379d81ef8e6befde0ae91d.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/ea/e4/ab28f58ba13d9466061eabd43ba5c55697a747221f7c1bcf5d8382ed3f71.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/dev/twig/62/a0/aefbae28c893d999469632edf04305e0771501c99ae2bc144a6a3cf1bae5.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/62/a0/aefbae28c893d999469632edf04305e0771501c99ae2bc144a6a3cf1bae5.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/af.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-nestable/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/appProdUrlGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/application.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/c8/15/b04b8f2088e4041f4ac66b4ad2a5ea846b301660f8e3c0f4f3b6b0e07615.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/6c/36/b062724a344a04126589e2251a4ed7ab1722c44992ef9c2e7abb582399b4.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/12/e9/b154ccf6bc028d6cd5eb14d7b88bcc0f55d32dcd4284c081d3e0818f29bc.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/dev/twig/f6/47/b442a5ad4185c90fa232694fe01749ee1e9d2acca23c3114d57049673a84.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/f6/47/b442a5ad4185c90fa232694fe01749ee1e9d2acca23c3114d57049673a84.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$confirmationToken.cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$credentialsExpireAt.cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$credentialsExpired.cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$email.cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$emailCanonical.cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$enabled.cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$expired.cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$expiresAt.cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$groups.cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$lastLogin.cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$locked.cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$password.cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$passwordRequestedAt.cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$plainPassword.cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$roles.cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$salt.cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$username.cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$usernameCanonical.cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/28/8a/b8e807da70e5d9260d281f416face69747757c64e0d3a32751510ddddb08.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/fc/f5/bb98d14a3576d91ee674b71cc86ad3c5355ea95d6c2be2ee9b01c1e0e775.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/f2/75/bc6c5602a166204582bcd9a8cfa49974c3bcb99359551299a1322c8114ac.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/64/6c/bc90a9050f9de4113eef147e73d28c88ca5101a8ae7fb5f366c03a2601ac.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/dev/twig/31/8d/bd4b55025cff31224baef16015a4bf98d3a84ac2d1d1151e0d1354c0f88e.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/31/8d/bd4b55025cff31224baef16015a4bf98d3a84ac2d1d1151e0d1354c0f88e.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/bn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/bootbox/bootbox.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.az.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.cy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/bootstrap-datepicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.ka.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.kk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.kr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.mk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.ms.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.nl-BE.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.pt-BR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.rs-latin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.rs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.sq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.sw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.ua.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.zh-CN.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/js/locales/bootstrap-datepicker.zh-TW.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-boostrap-switch/bootstrap-switch.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-boostrap-switch/bootstrap-switch.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/bootstrap-tagsinput.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/bootstrap-tagsinput.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/bootstrap-theme.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/bootstro.js/bootstro.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/bootstro.js/bootstro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/bootstro.js/bootstro.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-markdown/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-select2/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/mixitup/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/bs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/d3/e9/c205b6c7a886cb3f0db2aed5a4368425e00414f14146008e53847367640e.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/32/30/c21933c8b207e7ddf27a4f8e5b33c5857614b134e507799ba92b5710a747.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/annotations/c3f62243f1bbe1367efa07e77661d00836212b2b$id.cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/annotations/c3f62243f1bbe1367efa07e77661d00836212b2b.cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/86/bf/c52c32bfa7ddecd9f74875b14860668794963f10fe53f0abf1e11adb23c5.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/dev/twig/91/f2/c70cd5ade782b01404d2480dd56fde73674aee7b228c95a5339fdbfc6984.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/91/f2/c70cd5ade782b01404d2480dd56fde73674aee7b228c95a5339fdbfc6984.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/58/27/cc3bdb7e250d092f6e02302ce4b5cf652ed325629413f1deeab4874687dc.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/29/70/cd924828e8364aa56a6c48115d17cce834aa584949ee91736f0a623eb284.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/b2/af/cf21b84fbea99b2c96fc6210c7cb4ea24815154282875ebf18aaeb883fa2.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/ckeditor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/classes.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/constants 13.03.57.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/constants.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/contents.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/cookiecuttr.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/jcrop/demos/crop.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/cy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/70/ce/d3fe6dcc6d799511c3f2e750ad90491dced012c5072aeefc5150b660365c.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/annotations/d5be2c4dc8c88fb8a088b9b2276f00810a961dd1#indexAction.cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/d5be2c4dc8c88fb8a088b9b2276f00810a961dd1.cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/annotations/d5be2c4dc8c88fb8a088b9b2276f00810a961dd1.cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/da/31/d78254ed356da172df5f44732ebe1a822795b4b9d336cabe8f598a16cc5e.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/dataTables.bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/datatables/dataTables.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-af.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-ar-DZ.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-az.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-be.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-bs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-cy-GB.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-en-AU.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-en-GB.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-en-NZ.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-eo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-eu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-fo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-fr-CA.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-fr-CH.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-hi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-hy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-it-CH.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-ka.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-kk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-km.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-ky.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-lb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-mk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-ml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-ms.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-nl-BE.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-nn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-pt-BR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-rm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-sq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-sr-SR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-ta.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-tj.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-zh-CN.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-zh-HK.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/i18n/datepicker-zh-TW.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/css/datepicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/less/datepicker.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/css/datepicker3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-datepicker/less/datepicker3.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/dmuploader/dmuploader.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/dmuploader/dmuploader.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/config/doctrine_extensions.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/e70d403.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/e70d403_bootstrap-switch.min_3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/e70d403_bootstrap-tagsinput_7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/e70d403_css?family=Source+Sans+Pro:300,400,600_2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/e70d403_font-awesome.min_4.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/e70d403_jquery-ui.min_6.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/e70d403_jquery.dataTables.min_5.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/e70d403_styles.min_1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/e70d403_timeout-dialog_8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/88/71/ecaeafc8be7b8bef96f915af03532808c336ea18c08508fdfcf6936518f1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/en-gb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/enquire.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/eo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/eu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/charts-flot/excanvas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/62/4b/f86619f8dd125b0c2bd1b55ea3cec5e39234954a1987d0033f1c249410a1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/75/91/f9d93ccd118cd363724f9f81e23fc9f32d59b690d133750a90d841229764.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/twig/c9/b6/ff84bc616e5d41451977a2af2bb35505be735b90aba9b280e7d53a54dafc.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/fo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-fseditor/fseditor.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/fullcalendar/gcal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/gmaps/gmaps.controls.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/gmaps/gmaps.core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/gmaps/gmaps.events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/gmaps/gmaps.geofences.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/gmaps/gmaps.geometry.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/gmaps/gmaps.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/gmaps/gmaps.layers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/gmaps/gmaps.map_types.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/gmaps/gmaps.markers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/gmaps/gmaps.overlays.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/gmaps/gmaps.routes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/gmaps/gmaps.static.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/gmaps/gmaps.streetview.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/gmaps/gmaps.styles.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/gmaps/gmaps.utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/gu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/hi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/jcrop/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/jquery-1.10.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/jquery-1.7.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/jquery-ui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/jquery-ui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/jquery-ui.structure.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/jquery-ui.theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/jcrop/css/jquery.Jcrop.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/jcrop/js/jquery.Jcrop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/jquery.blockUI.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/jcrop/js/jquery.color.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/jquery.cookie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/jquery.cookiecuttr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/jquery.creditCardValidator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/jquery.dataTables.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/jquery.dataTables.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/jquery.dataTables.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/jquery.dataTables.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/jquery.dataTables_themeroller.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/charts-flot/jquery.flot.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-inputmask/jquery.inputmask.bundle.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-inputmask/jquery.inputmask.date.extensions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-inputmask/jquery.inputmask.extensions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-inputmask/jquery.inputmask.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-inputmask/jquery.inputmask.numeric.extensions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-inputmask/jquery.inputmask.phone.extensions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-inputmask/jquery.inputmask.regex.extensions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/knob/jquery.knob.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/jquery.maskMoney.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/jquery.min.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/jquery.nicescroll.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-stepy/jquery.stepy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/jquery.touchSwipe.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/jqvmap/jquery.vmap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/jqueryui-1.10.3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/jqueryui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/jqueryui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/jqvmap/jqvmap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/ka.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/km.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/ku.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/less.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/mk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/mn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/charts-morrisjs/morris.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/ms.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/jcrop/demos/non-image.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/nonLogin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-inputmask/phone-codes/phone-be.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-inputmask/phone-codes/phone-codes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-inputmask/phone-codes/phone-nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-inputmask/phone-codes/phone-uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/placeholdr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/codeprettifier/prettify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/logs/prod.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/pwstrength.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-autosize/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/bootbox/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/pulsate/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-select2/release.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-select2/select2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-select2/select2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/si.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/progress-skylo/skylo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/progress-skylo/skylo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/sq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/styles.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/styles.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/jcrop/demos/styling.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/prod/templates.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/timeout-dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/timeout-dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/jcrop/demos/tutorial2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/jcrop/demos/tutorial4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/jcrop/demos/tutorial5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/ug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MewPipe/VideoBundle/Resources/views/Video/upload.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plugins/form-ckeditor/lang/zh.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/377aeed842712babfddf54e32bcc7bcc91f4a839#confirmedAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/377aeed842712babfddf54e32bcc7bcc91f4a839#registerAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/377aeed842712babfddf54e32bcc7bcc91f4a839.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/38f7b61d7629ad7f78afeb64e98ac94ddef54c8d#isAccountNonExpired.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/38f7b61d7629ad7f78afeb64e98ac94ddef54c8d#isAccountNonLocked.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/38f7b61d7629ad7f78afeb64e98ac94ddef54c8d#isCredentialsNonExpired.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/38f7b61d7629ad7f78afeb64e98ac94ddef54c8d#isEnabled.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/38f7b61d7629ad7f78afeb64e98ac94ddef54c8d.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/59fd5a242afd82b90a6ceb5e74a56292751b5ff4#urlRedirectAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/59fd5a242afd82b90a6ceb5e74a56292751b5ff4.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/6d77c4060d2c46d7db2a54ee9d739c0f7b88bfde#addGroup.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/6d77c4060d2c46d7db2a54ee9d739c0f7b88bfde#getGroupNames.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/6d77c4060d2c46d7db2a54ee9d739c0f7b88bfde#getGroups.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/6d77c4060d2c46d7db2a54ee9d739c0f7b88bfde#hasGroup.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/6d77c4060d2c46d7db2a54ee9d739c0f7b88bfde#removeGroup.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/6d77c4060d2c46d7db2a54ee9d739c0f7b88bfde.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#addRole.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#getConfirmationToken.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#getEmail.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#getEmailCanonical.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#getPlainPassword.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#getUsernameCanonical.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#hasRole.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#isPasswordRequestNonExpired.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#isSuperAdmin.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#removeRole.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#setConfirmationToken.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#setEmail.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#setEmailCanonical.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#setEnabled.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#setLastLogin.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#setLocked.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#setPassword.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#setPasswordRequestedAt.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#setPlainPassword.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#setRoles.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#setSuperAdmin.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#setUsername.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#setUsernameCanonical.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#__construct.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#__toString.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#addGroup.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#addRole.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#eraseCredentials.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getConfirmationToken.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getEmail.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getEmailCanonical.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getGroupNames.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getGroups.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getId.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getLastLogin.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getPassword.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getPasswordRequestedAt.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getPlainPassword.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getRoles.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getSalt.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getUsername.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getUsernameCanonical.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#hasGroup.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#hasRole.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#isAccountNonExpired.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#isAccountNonLocked.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#isCredentialsExpired.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#isCredentialsNonExpired.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#isEnabled.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#isExpired.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#isLocked.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#isPasswordRequestNonExpired.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#isSuperAdmin.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#removeGroup.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#removeRole.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#serialize.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setConfirmationToken.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setCredentialsExpireAt.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setCredentialsExpired.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setEmail.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setEmailCanonical.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setEnabled.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setExpired.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setExpiresAt.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setLastLogin.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setLocked.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setPassword.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setPasswordRequestedAt.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setPlainPassword.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setRoles.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setSuperAdmin.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setUsername.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setUsernameCanonical.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#unserialize.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$id.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/c3f62243f1bbe1367efa07e77661d00836212b2b#__construct.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/c3f62243f1bbe1367efa07e77661d00836212b2b#getId.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/d00cfa0e43921a42cab441e1f38a6eddca49c6ba#indexAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/d00cfa0e43921a42cab441e1f38a6eddca49c6ba.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/d2e083bdedbbce106cc0e22d2403123bbc4b457c#loginAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/d2e083bdedbbce106cc0e22d2403123bbc4b457c.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dc1f3c2690cec070768cf5dde8291f16c094e668#serialize.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dc1f3c2690cec070768cf5dde8291f16c094e668#unserialize.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dc1f3c2690cec070768cf5dde8291f16c094e668.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f437686921cc4405ab12403b18cc1c3fd782a5b7#eraseCredentials.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f437686921cc4405ab12403b18cc1c3fd782a5b7#getPassword.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f437686921cc4405ab12403b18cc1c3fd782a5b7#getRoles.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f437686921cc4405ab12403b18cc1c3fd782a5b7#getSalt.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f437686921cc4405ab12403b18cc1c3fd782a5b7#getUsername.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f437686921cc4405ab12403b18cc1c3fd782a5b7.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/07/d2/45d207" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/4f/dd/65dd4f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/72/06/8f0672" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/aa/8c/168caa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/c3/04/fb04c3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/c8/3f/133fc8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/0c/80/7cd65b36f5472ea5129bd43080a8c3c6439f355c2618f243602ed68e08d6.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/1b/b4/a63c02a798b1c965367dd5930f6519f2da1f87bf1a3891b752b1762fee34.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/64/6c/bc90a9050f9de4113eef147e73d28c88ca5101a8ae7fb5f366c03a2601ac.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/71/25/2c6f29484eb99b6a2f76d7043f1afb18a62a632bd0ff65922bab064fa1dc.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/a5/e6/32cdbf885655fcffc9f4ca5b04e635a348ab42dd599c0bfb481a60a1ccbb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/be/80/e1c42b623f4789ea0beb1b78b73c52605ab2bbb85a59066940fb7912bb8f.php" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/d00cfa0e43921a42cab441e1f38a6eddca49c6ba#indexAction.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/597877fc1359850fa8786ead82dcc8f6f491d628#showAction.cache.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/d00cfa0e43921a42cab441e1f38a6eddca49c6ba.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/597877fc1359850fa8786ead82dcc8f6f491d628.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/15/8d/17dd4a11767d48ebf367b8a36585ac14b31966df26b40f153b299da31b5d.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/15/8d/17dd4a11767d48ebf367b8a36585ac14b31966df26b40f153b299da31b5d.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/7a/f4/35fccedcf1a13bd9172eaad3277c628f35f0c044444e2b2de514beeaec79.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/7a/f4/35fccedcf1a13bd9172eaad3277c628f35f0c044444e2b2de514beeaec79.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/assetic/config/4/43a80f0e087752a2d4724591f85aa0e1.php" afterPath="$PROJECT_DIR$/app/cache/dev/assetic/config/4/43a80f0e087752a2d4724591f85aa0e1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/2f/7e/8eb75b0d77f52051876ce69db1917473bf685af64f10fc1c4000f87eeb60.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/2f/7e/8eb75b0d77f52051876ce69db1917473bf685af64f10fc1c4000f87eeb60.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/SymfonyRequirements.php" afterPath="$PROJECT_DIR$/app/SymfonyRequirements.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MewPipe/VideoBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/MewPipe/VideoBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MewPipe.iml" afterPath="$PROJECT_DIR$/.idea/MewPipe.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bootstrap.php.cache" afterPath="$PROJECT_DIR$/app/bootstrap.php.cache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/check.php" afterPath="$PROJECT_DIR$/app/check.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerCompiler.log" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerCompiler.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/prod/appProdProjectContainer.php" afterPath="$PROJECT_DIR$/app/cache/prod/appProdProjectContainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/prod/appProdUrlMatcher.php" afterPath="$PROJECT_DIR$/app/cache/prod/appProdUrlMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/prod/classes.map" afterPath="$PROJECT_DIR$/app/cache/prod/classes.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/dev.log" afterPath="$PROJECT_DIR$/app/logs/dev.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/parameters.yml" afterPath="$PROJECT_DIR$/app/config/parameters.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MewPipe/VideoBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/MewPipe/VideoBundle/Resources/views/Default/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MewPipe/VideoBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/MewPipe/VideoBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MewPipe.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,21 +756,71 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MewPipe/UserBundle/Resources/config/routing.yml">
+        <entry file="file://$PROJECT_DIR$/src/MewPipe/VideoBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
               <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="parameters.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <file leaf-file-name="upload.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MewPipe/VideoBundle/Resources/views/Video/upload.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+            <state vertical-scroll-proportion="-11.708333" vertical-offset="304" max-vertical-offset="915">
+              <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+              <folding>
+                <element signature="e#12#28#0#Twig" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.5" vertical-offset="255" max-vertical-offset="1440">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MewPipe/VideoBundle/Controller/DefaultController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.8333335" vertical-offset="259" max-vertical-offset="1140">
+              <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+              <folding>
+                <element signature="e#50#87#0#PHP" expanded="true" />
+                <element signature="e#588#632#0#PHP" expanded="true" />
+                <element signature="e#1101#1126#1#PHP" expanded="true" />
+                <element signature="e#1821#1846#1#PHP" expanded="true" />
+                <element signature="e#1890#1933#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.5" vertical-offset="15" max-vertical-offset="1020">
+              <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Video.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/MewPipe/VideoBundle/Entity/Video.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.61538464" vertical-offset="5106" max-vertical-offset="5760">
+              <caret line="366" column="20" selection-start-line="366" selection-start-column="20" selection-end-line="366" selection-end-column="20" />
+              <folding>
+                <element signature="e#46#78#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,51 +828,25 @@
       <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="587" max-vertical-offset="1200">
-              <caret line="72" column="23" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.122349106" vertical-offset="0" max-vertical-offset="613">
-              <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppKernel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="615">
-              <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MewPipe/UserBundle/Entity/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="600">
-              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1090" max-vertical-offset="1725">
+              <caret line="80" column="32" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
               <folding>
-                <element signature="e#44#86#0#PHP" expanded="true" />
+                <marker date="1432125550000" expanded="true" signature="1801:2156" placeholder="gedmo_translatable:" />
+                <marker date="1432125550000" expanded="true" signature="3573:3755" placeholder="stof_doctrine_extensions:" />
+                <marker date="1432125550000" expanded="true" signature="3705:3755" placeholder="orm:" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="security.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MewPipe/VideoBundle/Resources/views/Default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-              <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
-              <folding />
+            <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="915">
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+              <folding>
+                <element signature="e#12#28#0#Twig" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,11 +859,25 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/src/MewPipe/UserBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/MewPipe/VideoBundle/Resources/views/Default/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/MewPipe/VideoBundle/Repository/CommentsRepository.php" />
+        <option value="$PROJECT_DIR$/src/MewPipe/VideoBundle/Repository/VideoRepository.php" />
+        <option value="$PROJECT_DIR$/app/config/doctrine_extension.yml" />
+        <option value="$PROJECT_DIR$/app/config/doctrine_extensions.yml" />
+        <option value="$PROJECT_DIR$/src/MewPipe/UserBundle/Listener/DoctrineExtensionListener.php" />
+        <option value="$PROJECT_DIR$/src/MewPipe/VideoBundle/Entity/Comments.php" />
+        <option value="$PROJECT_DIR$/src/MewPipe/VideoBundle/Form/VideoType.php" />
+        <option value="$PROJECT_DIR$/src/MewPipe/VideoBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/MewPipe/VideoBundle/Resources/views/Video/upload.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/MewPipe/VideoBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/MewPipe/VideoBundle/Entity/Video.php" />
       </list>
     </option>
   </component>
@@ -132,10 +886,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="303" />
+    <option name="x" value="114" />
     <option name="y" value="23" />
-    <option name="width" value="955" />
-    <option name="height" value="710" />
+    <option name="width" value="1165" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -144,7 +898,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -188,6 +942,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -210,7 +996,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
+              <option name="myItemId" value="VideoBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -232,7 +1018,153 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
+              <option name="myItemId" value="VideoBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VideoBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VideoBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VideoBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VideoBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Form" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VideoBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -250,7 +1182,99 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VideoBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DependencyInjection" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VideoBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MewPipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -283,6 +1307,12 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/MewPipe/VideoBundle/Repository" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -303,6 +1333,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
     <list size="0" />
@@ -318,30 +1354,30 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="303" y="23" width="955" height="710" extended-state="0" />
+    <frame x="114" y="23" width="1165" height="745" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24921466" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20429185" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -365,44 +1401,60 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/MewPipe/UserBundle/Resources/config/routing.yml">
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="345">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MewPipe/VideoBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="135">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1440">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="615">
-          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+    <entry file="file://$PROJECT_DIR$/../../SYMWIS/symwis/src/Olky/Bundle/ImportBundle/Resources/views/Import/historical.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1884" max-vertical-offset="5325">
+          <caret line="147" column="10" selection-start-line="37" selection-start-column="4" selection-end-line="147" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MewPipe/UserBundle/Entity/User.php">
+    <entry file="file://$PROJECT_DIR$/../../SYMWIS/symwis/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="600">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="1515">
+          <caret line="68" column="24" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MewPipe/VideoBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#44#86#0#PHP" expanded="true" />
+            <element signature="e#12#28#0#Twig" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -410,16 +1462,338 @@
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="587" max-vertical-offset="1200">
-          <caret line="72" column="23" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
+          <caret line="73" column="46" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
+          <folding>
+            <marker date="1432125550000" expanded="true" signature="1801:2156" placeholder="gedmo_translatable:" />
+            <marker date="1432125550000" expanded="true" signature="3573:3755" placeholder="stof_doctrine_extensions:" />
+            <marker date="1432125550000" expanded="true" signature="3705:3755" placeholder="orm:" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="465">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="345">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MewPipe/VideoBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="135">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1440">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.122349106" vertical-offset="0" max-vertical-offset="613">
-          <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../SYMWIS/symwis/src/Olky/Bundle/ImportBundle/Resources/views/Import/historical.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1884" max-vertical-offset="5325">
+          <caret line="147" column="10" selection-start-line="37" selection-start-column="4" selection-end-line="147" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../SYMWIS/symwis/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="1515">
+          <caret line="68" column="24" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MewPipe/VideoBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#12#28#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="587" max-vertical-offset="1200">
+          <caret line="73" column="46" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
+          <folding>
+            <marker date="1432125550000" expanded="true" signature="1801:2156" placeholder="gedmo_translatable:" />
+            <marker date="1432125550000" expanded="true" signature="3573:3755" placeholder="stof_doctrine_extensions:" />
+            <marker date="1432125550000" expanded="true" signature="3705:3755" placeholder="orm:" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="465">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MewPipe/UserBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="600">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MewPipe/UserBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07340946" vertical-offset="0" max-vertical-offset="613">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MewPipe/VideoBundle/MewPipeVideoBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="613">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../SYMWIS/symwis/app/Resources/views/header.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.4739583" vertical-offset="0" max-vertical-offset="1890">
+          <caret line="95" column="17" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../SYMWIS/symwis/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="1515">
+          <caret line="68" column="24" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61174554" vertical-offset="0" max-vertical-offset="613">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04893964" vertical-offset="0" max-vertical-offset="613">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MewPipe/VideoBundle/Repository/CommentsRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.048076924" vertical-offset="0" max-vertical-offset="624">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MewPipe/VideoBundle/Repository/VideoRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.048076924" vertical-offset="0" max-vertical-offset="624">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/doctrine_extensions.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MewPipe/UserBundle/Listener/DoctrineExtensionListener.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.625" vertical-offset="0" max-vertical-offset="600">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding>
+            <element signature="e#47#103#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18518518" vertical-offset="0" max-vertical-offset="648">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../SYMWIS/symwis/src/Olky/Bundle/ImportBundle/Resources/views/Import/historical.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2864157" vertical-offset="1419" max-vertical-offset="5325">
+          <caret line="147" column="10" selection-start-line="37" selection-start-column="4" selection-end-line="147" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MewPipe/VideoBundle/Entity/Comments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.375" vertical-offset="516" max-vertical-offset="2805">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding>
+            <element signature="e#46#78#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MewPipe/VideoBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MewPipe/VideoBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="915">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding>
+            <element signature="e#12#28#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5" vertical-offset="255" max-vertical-offset="1440">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MewPipe/VideoBundle/Form/VideoType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2740384" vertical-offset="15" max-vertical-offset="1185">
+          <caret line="54" column="7" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
+          <folding>
+            <element signature="e#44#84#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.5" vertical-offset="15" max-vertical-offset="1020">
+          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45673078" vertical-offset="0" max-vertical-offset="645">
+          <caret line="20" column="77" selection-start-line="20" selection-start-column="77" selection-end-line="20" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1090" max-vertical-offset="1725">
+          <caret line="80" column="32" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
+          <folding>
+            <marker date="1432125550000" expanded="true" signature="1801:2156" placeholder="gedmo_translatable:" />
+            <marker date="1432125550000" expanded="true" signature="3573:3755" placeholder="stof_doctrine_extensions:" />
+            <marker date="1432125550000" expanded="true" signature="3705:3755" placeholder="orm:" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/gd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3453355" vertical-offset="14699" max-vertical-offset="39960">
+          <caret line="994" column="9" selection-start-line="994" selection-start-column="9" selection-end-line="994" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/ffmpeg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="3930">
+          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MewPipe/VideoBundle/Resources/views/Video/upload.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.708333" vertical-offset="304" max-vertical-offset="915">
+          <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+          <folding>
+            <element signature="e#12#28#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MewPipe/VideoBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.8333335" vertical-offset="259" max-vertical-offset="1140">
+          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+          <folding>
+            <element signature="e#50#87#0#PHP" expanded="true" />
+            <element signature="e#588#632#0#PHP" expanded="true" />
+            <element signature="e#1101#1126#1#PHP" expanded="true" />
+            <element signature="e#1821#1846#1#PHP" expanded="true" />
+            <element signature="e#1890#1933#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MewPipe/VideoBundle/Entity/Video.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61538464" vertical-offset="5106" max-vertical-offset="5760">
+          <caret line="366" column="20" selection-start-line="366" selection-start-column="20" selection-end-line="366" selection-end-column="20" />
+          <folding>
+            <element signature="e#46#78#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
