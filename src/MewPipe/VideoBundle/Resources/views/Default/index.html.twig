@@ -1,33 +1,78 @@
 {% extends '::base.html.twig' %}
 
  {% block body %}
- <div class="success">
-     Hello world home!
- </div>
 
      <div class="row">
          <div class="panel-heading">
              <h4>
-                 titre panel heading
+                 Dernière vidéo !
              </h4>
          </div>
          <div class="panel-body">
              <div class="dataTables_wrapper" role="grid">
 
+                 <div class="row">
+                     <div class="col-xs-3">
+                         <div class="dataTables_length">
+                             <label>
+                                 <select class="form-control" size="1" id="maxPerPage">
+                                     <option {% if (max == 5) %} selected {% endif %} value="{{path ('mew_pipe_video_homepage_pager', {'page' : page, 'max': 5,   'sort': sort, 'direction': direction})  }}">5</option>
+                                     <option {% if (max == 10) %} selected {% endif %} value="{{path ('mew_pipe_video_homepage_pager', {'page' : page, 'max': 10, 'sort': sort, 'direction': direction})  }}">10</option>
+                                     <option {% if (max == 25) %} selected {% endif %} value="{{path ('mew_pipe_video_homepage_pager', {'page' : page, 'max': 25, 'sort': sort, 'direction': direction})  }}">25</option>
+                                     <option {% if (max == 50) %} selected {% endif %} value="{{path ('mew_pipe_video_homepage_pager', {'page' : page, 'max': 50, 'sort': sort, 'direction': direction})  }}">50</option>
+                                 </select>
+                                 videos par page
+                             </label>
+                         </div>
+                     </div>
+                 </div>
+
                  <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-hover table-bordered datatables paginated">
                      <thead>
                      <tr>
-                         <th>Col 1</th>
-                         <th>Col 2</th>
+                         <td>{{ knp_pagination_sortable(pagination, 'date de création', 'createdAt') }}</td>
+                         <td>{{ knp_pagination_sortable(pagination, 'nombre de vue'|trans, 'views') }}</td>
+                         <td>{{ knp_pagination_sortable(pagination, 'titre', 'title') }}</td>
+                         <td>description</td>
                      </tr>
                      </thead>
                      <tbody>
-                     <tr>
-                         <th>Cell 1</th>
-                         <th>Cell 2</th>
-                     </tr>
+                     {% if length == 0 %}
+                         <tr>
+                             <td colspan="3">
+                                 <center>{% trans %}no_element_available_show_yet{% endtrans %}</center>
+                             </td>
+                         </tr>
+                     {% endif %}
+                     {% for data in pagination %}
+                         <tr>
+                             <td>{{ data.createdAt|date('Y-m-d H:i:s') }}</td>
+                             <td>{{ data.views }}</td>
+                             <td>{{ data.title }}</td>
+                             <td>{{ data.description }}</td>
+                         <tr/>
+                     {% endfor %}
+                     {% if pagination.getTotalItemCount() > 0 %}
+                         <tr>
+                             <td colspan="2">
+                                 {% set to %}
+                                 {% if pagination.getTotalItemCount() < max * page %}
+                                     {{ pagination.getTotalItemCount() }}
+                                 {% else %}
+                                     {{ max * page }}
+                                 {% endif %}
+                                 {% endset %}
+                                 video {{ (max * page) - max +1 }} à {{ to }} sur {{ pagination.getTotalItemCount() }} vidéos
+                             </td>
+                             <td colspan="2">
+                                 {{ knp_pagination_render(pagination) }}
+                             </td>
+                         </tr>
+                     {% endif %}
                      </tbody>
                  </table>
+
+
              </div>
          </div>
      </div>
@@ -35,7 +80,7 @@
          <div class="row">
              <div class="panel-heading">
                  <h4>
-                     titre panel heading
+                     La vidéo du moment !
                  </h4>
              </div>
              <div class="panel-body">

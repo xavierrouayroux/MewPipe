@@ -64,10 +64,10 @@ class Video extends \MewPipe\VideoBundle\Entity\Video implements \Doctrine\ORM\P
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return array('__isInitialized__', '' . "\0" . 'MewPipe\\VideoBundle\\Entity\\Video' . "\0" . 'id', 'user', '' . "\0" . 'MewPipe\\VideoBundle\\Entity\\Video' . "\0" . 'title', '' . "\0" . 'MewPipe\\VideoBundle\\Entity\\Video' . "\0" . 'description', '' . "\0" . 'MewPipe\\VideoBundle\\Entity\\Video' . "\0" . 'tags', 'path', 'name', 'mimeType', 'size', 'file', 'createdAt');
+            return array('__isInitialized__', '' . "\0" . 'MewPipe\\VideoBundle\\Entity\\Video' . "\0" . 'id', 'user', '' . "\0" . 'MewPipe\\VideoBundle\\Entity\\Video' . "\0" . 'title', '' . "\0" . 'MewPipe\\VideoBundle\\Entity\\Video' . "\0" . 'views', '' . "\0" . 'MewPipe\\VideoBundle\\Entity\\Video' . "\0" . 'description', '' . "\0" . 'MewPipe\\VideoBundle\\Entity\\Video' . "\0" . 'tags', '' . "\0" . 'MewPipe\\VideoBundle\\Entity\\Video' . "\0" . 'pathToImage', 'path', 'name', 'mimeType', 'size', 'file', 'createdAt');
         }
 
-        return array('__isInitialized__', '' . "\0" . 'MewPipe\\VideoBundle\\Entity\\Video' . "\0" . 'id', 'user', '' . "\0" . 'MewPipe\\VideoBundle\\Entity\\Video' . "\0" . 'title', '' . "\0" . 'MewPipe\\VideoBundle\\Entity\\Video' . "\0" . 'description', '' . "\0" . 'MewPipe\\VideoBundle\\Entity\\Video' . "\0" . 'tags', 'path', 'name', 'mimeType', 'size', 'file', 'createdAt');
+        return array('__isInitialized__', '' . "\0" . 'MewPipe\\VideoBundle\\Entity\\Video' . "\0" . 'id', 'user', '' . "\0" . 'MewPipe\\VideoBundle\\Entity\\Video' . "\0" . 'title', '' . "\0" . 'MewPipe\\VideoBundle\\Entity\\Video' . "\0" . 'views', '' . "\0" . 'MewPipe\\VideoBundle\\Entity\\Video' . "\0" . 'description', '' . "\0" . 'MewPipe\\VideoBundle\\Entity\\Video' . "\0" . 'tags', '' . "\0" . 'MewPipe\\VideoBundle\\Entity\\Video' . "\0" . 'pathToImage', 'path', 'name', 'mimeType', 'size', 'file', 'createdAt');
     }
 
     /**
@@ -406,6 +406,50 @@ class Video extends \MewPipe\VideoBundle\Entity\Video implements \Doctrine\ORM\P
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setTags', array($tags));
 
         return parent::setTags($tags);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getPathToImage()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPathToImage', array());
+
+        return parent::getPathToImage();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setPathToImage($pathToImage)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setPathToImage', array($pathToImage));
+
+        return parent::setPathToImage($pathToImage);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getViews()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getViews', array());
+
+        return parent::getViews();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setViews($views)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setViews', array($views));
+
+        return parent::setViews($views);
     }
 
 }

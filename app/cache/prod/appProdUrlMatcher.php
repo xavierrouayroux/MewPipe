@@ -27,9 +27,17 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
         $context = $this->context;
         $request = $this->request;
 
-        // mew_pipe_video_homepage
-        if ($pathinfo === '/home') {
-            return array (  '_controller' => 'MewPipe\\VideoBundle\\Controller\\DefaultController::indexAction',  '_route' => 'mew_pipe_video_homepage',);
+        if (0 === strpos($pathinfo, '/home')) {
+            // mew_pipe_video_homepage
+            if ($pathinfo === '/home') {
+                return array (  '_controller' => 'MewPipe\\VideoBundle\\Controller\\DefaultController::indexAction',  'sort' => 'createdAt',  'direction' => 'desc',  '_route' => 'mew_pipe_video_homepage',);
+            }
+
+            // mew_pipe_video_homepage_pager
+            if (0 === strpos($pathinfo, '/home/page') && preg_match('#^/home/page(?:/(?P<page>\\d+)(?:/(?P<max>\\d+)(?:/(?P<sort>[^/]++)(?:/(?P<direction>asc|desc))?)?)?)?$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'mew_pipe_video_homepage_pager')), array (  '_controller' => 'MewPipe\\VideoBundle\\Controller\\DefaultController::indexAction',  'page' => 1,  'max' => 5,  'sort' => 'createdAt',  'direction' => 'desc',));
+            }
+
         }
 
         if (0 === strpos($pathinfo, '/u')) {

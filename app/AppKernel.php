@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new MewPipe\UserBundle\MewPipeUserBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new MewPipe\VideoBundle\MewPipeVideoBundle(),
         );
 

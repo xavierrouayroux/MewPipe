@@ -10,4 +10,23 @@ namespace MewPipe\VideoBundle\Repository;
  */
 class VideoRepository extends \Doctrine\ORM\EntityRepository
 {
+    /**
+     * @param $sort
+     * @param $direction
+     *
+     * @return array
+     */
+    public function getListVideo($sort, $direction)
+    {
+        $queryBuilder = $this->_em->createQueryBuilder()
+            ->select('v')
+            ->from($this->_entityName, 'v')
+            //->join('o.client', 'cl')
+            ->orderBy('v.'.$sort,$direction);
+
+        $query = $queryBuilder->getQuery();
+        $results = $query->getResult();
+
+        return $results;
+    }
 }
