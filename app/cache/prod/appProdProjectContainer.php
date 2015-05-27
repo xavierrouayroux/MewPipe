@@ -110,6 +110,11 @@ class appProdProjectContainer extends Container
             'fos_user.util.email_canonicalizer' => 'getFosUser_Util_EmailCanonicalizerService',
             'fos_user.util.token_generator' => 'getFosUser_Util_TokenGeneratorService',
             'fos_user.util.user_manipulator' => 'getFosUser_Util_UserManipulatorService',
+            'fp_openid.identity_manager' => 'getFpOpenid_IdentityManagerService',
+            'fp_openid.relying_party.default' => 'getFpOpenid_RelyingParty_DefaultService',
+            'fp_openid.relying_party.light_open_id' => 'getFpOpenid_RelyingParty_LightOpenIdService',
+            'fp_openid.relying_party.recovered_failure' => 'getFpOpenid_RelyingParty_RecoveredFailureService',
+            'fp_openid.user_manager' => 'getFpOpenid_UserManagerService',
             'fragment.handler' => 'getFragment_HandlerService',
             'fragment.listener' => 'getFragment_ListenerService',
             'fragment.renderer.esi' => 'getFragment_Renderer_EsiService',
@@ -133,6 +138,7 @@ class appProdProjectContainer extends Container
             'knp_paginator.twig.extension.pagination' => 'getKnpPaginator_Twig_Extension_PaginationService',
             'locale_listener' => 'getLocaleListenerService',
             'logger' => 'getLoggerService',
+            'mew_pipe.openid_user_manager' => 'getMewPipe_OpenidUserManagerService',
             'monolog.handler.console' => 'getMonolog_Handler_ConsoleService',
             'monolog.handler.main' => 'getMonolog_Handler_MainService',
             'monolog.handler.nested' => 'getMonolog_Handler_NestedService',
@@ -325,28 +331,31 @@ class appProdProjectContainer extends Container
     {
         $a = $this->get('annotation_reader');
         $b = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($a, array(0 => ($this->targetDirs[3].'/vendor/gedmo/doctrine-extensions/lib/Gedmo/Translatable/Entity'), 1 => ($this->targetDirs[3].'/vendor/gedmo/doctrine-extensions/lib/Gedmo/Translator/Entity'), 2 => ($this->targetDirs[3].'/vendor/gedmo/doctrine-extensions/lib/Gedmo/Loggable/Entity'), 3 => ($this->targetDirs[3].'/vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity'), 4 => ($this->targetDirs[3].'/src/MewPipe/VideoBundle/Entity'), 5 => ($this->targetDirs[3].'/src/MewPipe/UserBundle/Entity')));
-        $c = new \Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain();
-        $c->addDriver($b, 'Gedmo\\Translatable\\Entity');
-        $c->addDriver($b, 'Gedmo\\Translator\\Entity');
-        $c->addDriver($b, 'Gedmo\\Loggable\\Entity');
-        $c->addDriver($b, 'Gedmo\\Tree\\Entity');
-        $c->addDriver($b, 'MewPipe\\VideoBundle\\Entity');
-        $c->addDriver($b, 'MewPipe\\UserBundle\\Entity');
-        $c->addDriver(new \Doctrine\ORM\Mapping\Driver\XmlDriver(new \Doctrine\Common\Persistence\Mapping\Driver\SymfonyFileLocator(array(($this->targetDirs[3].'/vendor/friendsofsymfony/user-bundle/Resources/config/doctrine-mapping') => 'FOS\\UserBundle\\Model'), '.orm.xml')), 'FOS\\UserBundle\\Model');
-        $d = new \Doctrine\ORM\Configuration();
-        $d->setEntityNamespaces(array('GedmoTranslatable' => 'Gedmo\\Translatable\\Entity', 'GedmoTranslator' => 'Gedmo\\Translator\\Entity', 'GedmoLoggable' => 'Gedmo\\Loggable\\Entity', 'GedmoTree' => 'Gedmo\\Tree\\Entity', 'MewPipeVideoBundle' => 'MewPipe\\VideoBundle\\Entity', 'MewPipeUserBundle' => 'MewPipe\\UserBundle\\Entity'));
-        $d->setMetadataCacheImpl($this->get('doctrine_cache.providers.doctrine.orm.default_metadata_cache'));
-        $d->setQueryCacheImpl($this->get('doctrine_cache.providers.doctrine.orm.default_query_cache'));
-        $d->setResultCacheImpl($this->get('doctrine_cache.providers.doctrine.orm.default_result_cache'));
-        $d->setMetadataDriverImpl($c);
-        $d->setProxyDir((__DIR__.'/doctrine/orm/Proxies'));
-        $d->setProxyNamespace('Proxies');
-        $d->setAutoGenerateProxyClasses(false);
-        $d->setClassMetadataFactoryName('Doctrine\\ORM\\Mapping\\ClassMetadataFactory');
-        $d->setDefaultRepositoryClassName('Doctrine\\ORM\\EntityRepository');
-        $d->setNamingStrategy(new \Doctrine\ORM\Mapping\DefaultNamingStrategy());
-        $d->setEntityListenerResolver($this->get('doctrine.orm.default_entity_listener_resolver'));
-        $this->services['doctrine.orm.default_entity_manager'] = $instance = \Doctrine\ORM\EntityManager::create($this->get('doctrine.dbal.default_connection'), $d);
+        $c = new \Doctrine\ORM\Mapping\Driver\SimplifiedXmlDriver(array(($this->targetDirs[3].'/vendor/fp/openid-bundle/Fp/OpenIdBundle/Resources/config/doctrine') => 'Fp\\OpenIdBundle\\Entity'));
+        $c->setGlobalBasename('mapping');
+        $d = new \Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain();
+        $d->addDriver($b, 'Gedmo\\Translatable\\Entity');
+        $d->addDriver($b, 'Gedmo\\Translator\\Entity');
+        $d->addDriver($b, 'Gedmo\\Loggable\\Entity');
+        $d->addDriver($b, 'Gedmo\\Tree\\Entity');
+        $d->addDriver($b, 'MewPipe\\VideoBundle\\Entity');
+        $d->addDriver($b, 'MewPipe\\UserBundle\\Entity');
+        $d->addDriver($c, 'Fp\\OpenIdBundle\\Entity');
+        $d->addDriver(new \Doctrine\ORM\Mapping\Driver\XmlDriver(new \Doctrine\Common\Persistence\Mapping\Driver\SymfonyFileLocator(array(($this->targetDirs[3].'/vendor/friendsofsymfony/user-bundle/Resources/config/doctrine-mapping') => 'FOS\\UserBundle\\Model'), '.orm.xml')), 'FOS\\UserBundle\\Model');
+        $e = new \Doctrine\ORM\Configuration();
+        $e->setEntityNamespaces(array('GedmoTranslatable' => 'Gedmo\\Translatable\\Entity', 'GedmoTranslator' => 'Gedmo\\Translator\\Entity', 'GedmoLoggable' => 'Gedmo\\Loggable\\Entity', 'GedmoTree' => 'Gedmo\\Tree\\Entity', 'FpOpenIdBundle' => 'Fp\\OpenIdBundle\\Entity', 'MewPipeVideoBundle' => 'MewPipe\\VideoBundle\\Entity', 'MewPipeUserBundle' => 'MewPipe\\UserBundle\\Entity'));
+        $e->setMetadataCacheImpl($this->get('doctrine_cache.providers.doctrine.orm.default_metadata_cache'));
+        $e->setQueryCacheImpl($this->get('doctrine_cache.providers.doctrine.orm.default_query_cache'));
+        $e->setResultCacheImpl($this->get('doctrine_cache.providers.doctrine.orm.default_result_cache'));
+        $e->setMetadataDriverImpl($d);
+        $e->setProxyDir((__DIR__.'/doctrine/orm/Proxies'));
+        $e->setProxyNamespace('Proxies');
+        $e->setAutoGenerateProxyClasses(false);
+        $e->setClassMetadataFactoryName('Doctrine\\ORM\\Mapping\\ClassMetadataFactory');
+        $e->setDefaultRepositoryClassName('Doctrine\\ORM\\EntityRepository');
+        $e->setNamingStrategy(new \Doctrine\ORM\Mapping\DefaultNamingStrategy());
+        $e->setEntityListenerResolver($this->get('doctrine.orm.default_entity_listener_resolver'));
+        $this->services['doctrine.orm.default_entity_manager'] = $instance = \Doctrine\ORM\EntityManager::create($this->get('doctrine.dbal.default_connection'), $e);
         $this->get('doctrine.orm.default_manager_configurator')->configure($instance);
         return $instance;
     }
@@ -674,6 +683,29 @@ class appProdProjectContainer extends Container
     {
         return $this->services['fos_user.util.user_manipulator'] = new \FOS\UserBundle\Util\UserManipulator($this->get('fos_user.user_manager'));
     }
+    protected function getFpOpenid_IdentityManagerService()
+    {
+        return $this->services['fp_openid.identity_manager'] = new \Fp\OpenIdBundle\Entity\IdentityManager($this->get('doctrine.orm.default_entity_manager'), 'MewPipe\\UserBundle\\Entity\\OpenIdIdentity');
+    }
+    protected function getFpOpenid_RelyingParty_DefaultService()
+    {
+        $this->services['fp_openid.relying_party.default'] = $instance = new \Fp\OpenIdBundle\RelyingParty\RelyingPartyCollection();
+        $instance->append($this->get('fp_openid.relying_party.recovered_failure'));
+        $instance->append($this->get('fp_openid.relying_party.light_open_id'));
+        return $instance;
+    }
+    protected function getFpOpenid_RelyingParty_LightOpenIdService()
+    {
+        return $this->services['fp_openid.relying_party.light_open_id'] = new \Fp\OpenIdBundle\Bridge\RelyingParty\LightOpenIdRelyingParty();
+    }
+    protected function getFpOpenid_RelyingParty_RecoveredFailureService()
+    {
+        return $this->services['fp_openid.relying_party.recovered_failure'] = new \Fp\OpenIdBundle\RelyingParty\RecoveredFailureRelyingParty();
+    }
+    protected function getFpOpenid_UserManagerService()
+    {
+        return $this->services['fp_openid.user_manager'] = new \Fp\OpenIdBundle\Model\UserManager($this->get('fp_openid.identity_manager'));
+    }
     protected function getFragment_HandlerService()
     {
         $this->services['fragment.handler'] = $instance = new \Symfony\Component\HttpKernel\Fragment\FragmentHandler(array(), false, $this->get('request_stack'));
@@ -795,6 +827,10 @@ class appProdProjectContainer extends Container
         $instance->pushHandler($this->get('monolog.handler.main'));
         return $instance;
     }
+    protected function getMewPipe_OpenidUserManagerService()
+    {
+        return $this->services['mew_pipe.openid_user_manager'] = new \MewPipe\UserBundle\Entity\OpenIdUserManager($this->get('fp_openid.identity_manager'), $this->get('doctrine.orm.default_entity_manager'));
+    }
     protected function getMonolog_Handler_ConsoleService()
     {
         return $this->services['monolog.handler.console'] = new \Symfony\Bridge\Monolog\Handler\ConsoleHandler(NULL, true, array());
@@ -914,21 +950,30 @@ class appProdProjectContainer extends Container
         $d = $this->get('router', ContainerInterface::NULL_ON_INVALID_REFERENCE);
         $e = $this->get('http_kernel');
         $f = $this->get('security.authentication.manager');
-        $g = new \Symfony\Component\HttpFoundation\RequestMatcher('^/login$');
-        $h = new \Symfony\Component\HttpFoundation\RequestMatcher('^/register');
-        $i = new \Symfony\Component\HttpFoundation\RequestMatcher('^/resetting');
-        $j = new \Symfony\Component\HttpFoundation\RequestMatcher('^/admin/');
-        $k = new \Symfony\Component\Security\Http\AccessMap();
-        $k->add($g, array(0 => 'IS_AUTHENTICATED_ANONYMOUSLY'), NULL);
-        $k->add($h, array(0 => 'IS_AUTHENTICATED_ANONYMOUSLY'), NULL);
-        $k->add($i, array(0 => 'IS_AUTHENTICATED_ANONYMOUSLY'), NULL);
-        $k->add($j, array(0 => 'ROLE_ADMIN'), NULL);
-        $l = new \Symfony\Component\Security\Http\HttpUtils($d, $d);
-        $m = new \Symfony\Component\Security\Http\Firewall\LogoutListener($b, $l, new \Symfony\Component\Security\Http\Logout\DefaultLogoutSuccessHandler($l, '/'), array('csrf_parameter' => '_csrf_token', 'intention' => 'logout', 'logout_path' => '/logout'));
-        $m->addHandler(new \Symfony\Component\Security\Http\Logout\SessionLogoutHandler());
-        $n = new \Symfony\Component\Security\Http\Authentication\DefaultAuthenticationSuccessHandler($l, array('always_use_default_target_path' => false, 'default_target_path' => '/', 'login_path' => '/login', 'target_path_parameter' => '_target_path', 'use_referer' => false));
-        $n->setProviderKey('main');
-        return $this->services['security.firewall.map.context.main'] = new \Symfony\Bundle\SecurityBundle\Security\FirewallContext(array(0 => new \Symfony\Component\Security\Http\Firewall\ChannelListener($k, new \Symfony\Component\Security\Http\EntryPoint\RetryAuthenticationEntryPoint(80, 443), $a), 1 => new \Symfony\Component\Security\Http\Firewall\ContextListener($b, array(0 => $this->get('fos_user.user_provider.username')), 'main', $a, $c), 2 => $m, 3 => new \Symfony\Component\Security\Http\Firewall\UsernamePasswordFormAuthenticationListener($b, $f, $this->get('security.authentication.session_strategy'), $l, 'main', $n, new \Symfony\Component\Security\Http\Authentication\DefaultAuthenticationFailureHandler($e, $l, array('login_path' => '/login', 'failure_path' => NULL, 'failure_forward' => false, 'failure_path_parameter' => '_failure_path'), $a), array('check_path' => '/login_check', 'use_forward' => false, 'require_previous_session' => true, 'username_parameter' => '_username', 'password_parameter' => '_password', 'csrf_parameter' => '_csrf_token', 'intention' => 'authenticate', 'post_only' => true), $a, $c, $this->get('security.csrf.token_manager')), 4 => new \Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener($b, '556582453c014', $a), 5 => new \Symfony\Component\Security\Http\Firewall\AccessListener($b, $this->get('security.access.decision_manager'), $k, $f)), new \Symfony\Component\Security\Http\Firewall\ExceptionListener($b, $this->get('security.authentication.trust_resolver'), $l, 'main', new \Symfony\Component\Security\Http\EntryPoint\FormAuthenticationEntryPoint($e, $l, '/login', false), NULL, NULL, $a));
+        $g = $this->get('security.authentication.session_strategy');
+        $h = new \Symfony\Component\HttpFoundation\RequestMatcher('^/login_openid$');
+        $i = new \Symfony\Component\HttpFoundation\RequestMatcher('^/secured_area');
+        $j = new \Symfony\Component\HttpFoundation\RequestMatcher('^/login$');
+        $k = new \Symfony\Component\HttpFoundation\RequestMatcher('^/register');
+        $l = new \Symfony\Component\HttpFoundation\RequestMatcher('^/resetting');
+        $m = new \Symfony\Component\HttpFoundation\RequestMatcher('^/admin/');
+        $n = new \Symfony\Component\Security\Http\AccessMap();
+        $n->add($h, array(0 => 'IS_AUTHENTICATED_ANONYMOUSLY'), NULL);
+        $n->add($i, array(0 => 'IS_AUTHENTICATED_OPENID'), NULL);
+        $n->add($j, array(0 => 'IS_AUTHENTICATED_ANONYMOUSLY'), NULL);
+        $n->add($k, array(0 => 'IS_AUTHENTICATED_ANONYMOUSLY'), NULL);
+        $n->add($l, array(0 => 'IS_AUTHENTICATED_ANONYMOUSLY'), NULL);
+        $n->add($m, array(0 => 'ROLE_ADMIN'), NULL);
+        $o = new \Symfony\Component\Security\Http\HttpUtils($d, $d);
+        $p = new \Symfony\Component\Security\Http\Firewall\LogoutListener($b, $o, new \Symfony\Component\Security\Http\Logout\DefaultLogoutSuccessHandler($o, '/'), array('csrf_parameter' => '_csrf_token', 'intention' => 'logout', 'logout_path' => '/logout'));
+        $p->addHandler(new \Symfony\Component\Security\Http\Logout\SessionLogoutHandler());
+        $q = new \Symfony\Component\Security\Http\Authentication\DefaultAuthenticationSuccessHandler($o, array('always_use_default_target_path' => false, 'default_target_path' => '/', 'login_path' => '/login', 'target_path_parameter' => '_target_path', 'use_referer' => false));
+        $q->setProviderKey('main');
+        $r = new \Symfony\Component\Security\Http\Authentication\DefaultAuthenticationSuccessHandler($o, array('login_path' => '/login_openid', 'target_path_parameter' => '_target_path', 'always_use_default_target_path' => false, 'default_target_path' => '/', 'use_referer' => false));
+        $r->setProviderKey('main');
+        $s = new \Fp\OpenIdBundle\Security\Http\Firewall\OpenIdAuthenticationListener($b, $f, $g, $o, 'main', $r, new \Symfony\Component\Security\Http\Authentication\DefaultAuthenticationFailureHandler($e, $o, array('login_path' => '/login_openid', 'failure_path' => NULL, 'failure_forward' => false, 'failure_path_parameter' => '_failure_path'), $a), array('login_path' => '/login_openid', 'check_path' => '/login_check_openid', 'create_user_if_not_exists' => true, 'required_attributes' => array(0 => 'contact/email'), 'use_forward' => false, 'require_previous_session' => true, 'target_path_parameter' => '_target_path', 'optional_attributes' => array()), $a, $c);
+        $s->setRelyingParty($this->get('fp_openid.relying_party.default'));
+        return $this->services['security.firewall.map.context.main'] = new \Symfony\Bundle\SecurityBundle\Security\FirewallContext(array(0 => new \Symfony\Component\Security\Http\Firewall\ChannelListener($n, new \Symfony\Component\Security\Http\EntryPoint\RetryAuthenticationEntryPoint(80, 443), $a), 1 => new \Symfony\Component\Security\Http\Firewall\ContextListener($b, array(0 => $this->get('fos_user.user_provider.username'), 1 => $this->get('mew_pipe.openid_user_manager'), 2 => new \Symfony\Bridge\Doctrine\Security\User\EntityUserProvider($this->get('doctrine'), 'MewPipeUserBundle:User', 'username', NULL)), 'main', $a, $c), 2 => $p, 3 => new \Symfony\Component\Security\Http\Firewall\UsernamePasswordFormAuthenticationListener($b, $f, $g, $o, 'main', $q, new \Symfony\Component\Security\Http\Authentication\DefaultAuthenticationFailureHandler($e, $o, array('login_path' => '/login', 'failure_path' => NULL, 'failure_forward' => false, 'failure_path_parameter' => '_failure_path'), $a), array('check_path' => '/login_check', 'use_forward' => false, 'require_previous_session' => true, 'username_parameter' => '_username', 'password_parameter' => '_password', 'csrf_parameter' => '_csrf_token', 'intention' => 'authenticate', 'post_only' => true), $a, $c, $this->get('security.csrf.token_manager')), 4 => $s, 5 => new \Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener($b, '55659fda13270', $a), 6 => new \Symfony\Component\Security\Http\Firewall\AccessListener($b, $this->get('security.access.decision_manager'), $n, $f)), new \Symfony\Component\Security\Http\Firewall\ExceptionListener($b, $this->get('security.authentication.trust_resolver'), $o, 'main', new \Symfony\Component\Security\Http\EntryPoint\FormAuthenticationEntryPoint($e, $o, '/login_openid', false), NULL, NULL, $a));
     }
     protected function getSecurity_Rememberme_ResponseListenerService()
     {
@@ -1494,6 +1539,7 @@ class appProdProjectContainer extends Container
         $instance->addPath(($this->targetDirs[3].'/vendor/doctrine/doctrine-bundle/Resources/views'), 'Doctrine');
         $instance->addPath(($this->targetDirs[3].'/vendor/friendsofsymfony/user-bundle/Resources/views'), 'FOSUser');
         $instance->addPath(($this->targetDirs[3].'/vendor/knplabs/knp-paginator-bundle/Knp/Bundle/PaginatorBundle/Resources/views'), 'KnpPaginator');
+        $instance->addPath(($this->targetDirs[3].'/vendor/fp/openid-bundle/Fp/OpenIdBundle/Resources/views'), 'FpOpenId');
         $instance->addPath(($this->targetDirs[3].'/src/MewPipe/VideoBundle/Resources/views'), 'MewPipeVideo');
         $instance->addPath(($this->targetDirs[3].'/src/MewPipe/UserBundle/Resources/views'), 'MewPipeUser');
         $instance->addPath(($this->targetDirs[2].'/Resources/views'));
@@ -1552,13 +1598,14 @@ class appProdProjectContainer extends Container
     }
     protected function getSecurity_Access_DecisionManagerService()
     {
-        $a = $this->get('security.role_hierarchy');
-        $b = $this->get('security.authentication.trust_resolver');
-        return $this->services['security.access.decision_manager'] = new \Symfony\Component\Security\Core\Authorization\AccessDecisionManager(array(0 => new \Symfony\Component\Security\Core\Authorization\Voter\RoleHierarchyVoter($a), 1 => new \Symfony\Component\Security\Core\Authorization\Voter\ExpressionVoter(new \Symfony\Component\Security\Core\Authorization\ExpressionLanguage(), $b, $a), 2 => new \Symfony\Component\Security\Core\Authorization\Voter\AuthenticatedVoter($b)), 'affirmative', false, true);
+        $a = $this->get('security.authentication.trust_resolver');
+        $b = $this->get('security.role_hierarchy');
+        return $this->services['security.access.decision_manager'] = new \Symfony\Component\Security\Core\Authorization\AccessDecisionManager(array(0 => new \Fp\OpenIdBundle\Security\Core\Authorization\Voter\OpenIdAuthenticatedVoter(), 1 => new \Symfony\Component\Security\Core\Authorization\Voter\ExpressionVoter(new \Symfony\Component\Security\Core\Authorization\ExpressionLanguage(), $a, $b), 2 => new \Symfony\Component\Security\Core\Authorization\Voter\RoleHierarchyVoter($b), 3 => new \Symfony\Component\Security\Core\Authorization\Voter\AuthenticatedVoter($a)), 'affirmative', false, true);
     }
     protected function getSecurity_Authentication_ManagerService()
     {
-        $this->services['security.authentication.manager'] = $instance = new \Symfony\Component\Security\Core\Authentication\AuthenticationProviderManager(array(0 => new \Symfony\Component\Security\Core\Authentication\Provider\DaoAuthenticationProvider($this->get('fos_user.user_provider.username'), $this->get('security.user_checker'), 'main', $this->get('security.encoder_factory'), true), 1 => new \Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider('556582453c014')), true);
+        $a = $this->get('security.user_checker');
+        $this->services['security.authentication.manager'] = $instance = new \Symfony\Component\Security\Core\Authentication\AuthenticationProviderManager(array(0 => new \Symfony\Component\Security\Core\Authentication\Provider\DaoAuthenticationProvider($this->get('fos_user.user_provider.username'), $a, 'main', $this->get('security.encoder_factory'), true), 1 => new \Fp\OpenIdBundle\Security\Core\Authentication\Provider\OpenIdAuthenticationProvider('main', $this->get('mew_pipe.openid_user_manager'), $a, true), 2 => new \Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider('55659fda13270')), true);
         $instance->setEventDispatcher($this->get('event_dispatcher'));
         return $instance;
     }
@@ -1650,6 +1697,7 @@ class appProdProjectContainer extends Container
                 'FOSUserBundle' => 'FOS\\UserBundle\\FOSUserBundle',
                 'StofDoctrineExtensionsBundle' => 'Stof\\DoctrineExtensionsBundle\\StofDoctrineExtensionsBundle',
                 'KnpPaginatorBundle' => 'Knp\\Bundle\\PaginatorBundle\\KnpPaginatorBundle',
+                'FpOpenIdBundle' => 'Fp\\OpenIdBundle\\FpOpenIdBundle',
                 'MewPipeVideoBundle' => 'MewPipe\\VideoBundle\\MewPipeVideoBundle',
                 'MewPipeUserBundle' => 'MewPipe\\UserBundle\\MewPipeUserBundle',
             ),
@@ -2246,6 +2294,16 @@ class appProdProjectContainer extends Container
             'knp_paginator.template.filtration' => 'KnpPaginatorBundle:Pagination:filtration.html.twig',
             'knp_paginator.template.sortable' => 'KnpPaginatorBundle:Pagination:sortable_link.html.twig',
             'knp_paginator.page_range' => 5,
+            'security.authentication.provider.fp_openid.class' => 'Fp\\OpenIdBundle\\Security\\Core\\Authentication\\Provider\\OpenIdAuthenticationProvider',
+            'security.authentication.listener.fp_openid.class' => 'Fp\\OpenIdBundle\\Security\\Http\\Firewall\\OpenIdAuthenticationListener',
+            'security.access.fp_openid_authenticated_voter.class' => 'Fp\\OpenIdBundle\\Security\\Core\\Authorization\\Voter\\OpenIdAuthenticatedVoter',
+            'fp_openid.relying_party.light_open_id.class' => 'Fp\\OpenIdBundle\\Bridge\\RelyingParty\\LightOpenIdRelyingParty',
+            'fp_openid.relying_party.recovered_failure.class' => 'Fp\\OpenIdBundle\\RelyingParty\\RecoveredFailureRelyingParty',
+            'fp_openid.relying_party.collection.class' => 'Fp\\OpenIdBundle\\RelyingParty\\RelyingPartyCollection',
+            'fp_openid.template.engine' => 'twig',
+            'fp_openid.identity_manager.class' => 'Fp\\OpenIdBundle\\Entity\\IdentityManager',
+            'fp_openid.user_manager.class' => 'Fp\\OpenIdBundle\\Model\\UserManager',
+            'fp_openid.model.identity.class' => 'MewPipe\\UserBundle\\Entity\\OpenIdIdentity',
             'console.command.ids' => array(
             ),
         );

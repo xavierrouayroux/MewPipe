@@ -1,6 +1,6 @@
 mew_pipe_video:
     resource: "@MewPipeVideoBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /video
 
 mew_pipe_user:
     resource: "@MewPipeUserBundle/Resources/config/routing.yml"
@@ -8,4 +8,11 @@ mew_pipe_user:
 
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+fp_openid_security:
+    resource: "@FpOpenIdBundle/Resources/config/routing/security.xml"
+
+mew_pipe_video_homepage:
+    path: /
+    defaults: { _controller: MewPipeVideoBundle:Default:index, sort:'createdAt', direction:'desc'}
 

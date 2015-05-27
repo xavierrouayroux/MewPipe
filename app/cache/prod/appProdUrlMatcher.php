@@ -27,30 +27,22 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
         $context = $this->context;
         $request = $this->request;
 
-        if (0 === strpos($pathinfo, '/home')) {
-            // mew_pipe_video_homepage
-            if ($pathinfo === '/home') {
-                return array (  '_controller' => 'MewPipe\\VideoBundle\\Controller\\DefaultController::indexAction',  'sort' => 'createdAt',  'direction' => 'desc',  '_route' => 'mew_pipe_video_homepage',);
+        if (0 === strpos($pathinfo, '/video')) {
+            // mew_pipe_video_homepage_pager
+            if (0 === strpos($pathinfo, '/video/page') && preg_match('#^/video/page(?:/(?P<page>\\d+)(?:/(?P<max>\\d+)(?:/(?P<sort>[^/]++)(?:/(?P<direction>asc|desc))?)?)?)?$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'mew_pipe_video_homepage_pager')), array (  '_controller' => 'MewPipe\\VideoBundle\\Controller\\DefaultController::indexAction',  'page' => 1,  'max' => 5,  'sort' => 'createdAt',  'direction' => 'desc',));
             }
 
-            // mew_pipe_video_homepage_pager
-            if (0 === strpos($pathinfo, '/home/page') && preg_match('#^/home/page(?:/(?P<page>\\d+)(?:/(?P<max>\\d+)(?:/(?P<sort>[^/]++)(?:/(?P<direction>asc|desc))?)?)?)?$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'mew_pipe_video_homepage_pager')), array (  '_controller' => 'MewPipe\\VideoBundle\\Controller\\DefaultController::indexAction',  'page' => 1,  'max' => 5,  'sort' => 'createdAt',  'direction' => 'desc',));
+            // mew_pipe_video_upload
+            if ($pathinfo === '/video/upload') {
+                return array (  '_controller' => 'MewPipe\\VideoBundle\\Controller\\DefaultController::UploadVideoAction',  '_route' => 'mew_pipe_video_upload',);
             }
 
         }
 
-        if (0 === strpos($pathinfo, '/u')) {
-            // mew_pipe_video_upload
-            if ($pathinfo === '/upload') {
-                return array (  '_controller' => 'MewPipe\\VideoBundle\\Controller\\DefaultController::UploadVideoAction',  '_route' => 'mew_pipe_video_upload',);
-            }
-
-            // mew_pipe_user_homepage
-            if (0 === strpos($pathinfo, '/user/hello') && preg_match('#^/user/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'mew_pipe_user_homepage')), array (  '_controller' => 'MewPipe\\UserBundle\\Controller\\DefaultController::indexAction',));
-            }
-
+        // mew_pipe_user_homepage
+        if (0 === strpos($pathinfo, '/user/hello') && preg_match('#^/user/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'mew_pipe_user_homepage')), array (  '_controller' => 'MewPipe\\UserBundle\\Controller\\DefaultController::indexAction',));
         }
 
         if (0 === strpos($pathinfo, '/log')) {
@@ -238,6 +230,36 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
             return array (  '_controller' => 'FOS\\UserBundle\\Controller\\ChangePasswordController::changePasswordAction',  '_route' => 'fos_user_change_password',);
         }
         not_fos_user_change_password:
+
+        if (0 === strpos($pathinfo, '/log')) {
+            if (0 === strpos($pathinfo, '/login_')) {
+                // fp_openid_security_login
+                if ($pathinfo === '/login_openid') {
+                    return array (  '_controller' => 'Fp\\OpenIdBundle\\Controller\\SecurityController::loginAction',  '_route' => 'fp_openid_security_login',);
+                }
+
+                // fp_openid_security_check
+                if ($pathinfo === '/login_check_openid') {
+                    return array (  '_controller' => 'Fp\\OpenIdBundle\\Controller\\SecurityController::checkAction',  '_route' => 'fp_openid_security_check',);
+                }
+
+            }
+
+            // fp_openid_security_logout
+            if ($pathinfo === '/logout') {
+                return array (  '_controller' => 'Fp\\OpenIdBundle\\Controller\\SecurityController::logoutAction',  '_route' => 'fp_openid_security_logout',);
+            }
+
+        }
+
+        // mew_pipe_video_homepage
+        if (rtrim($pathinfo, '/') === '') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'mew_pipe_video_homepage');
+            }
+
+            return array (  '_controller' => 'MewPipe\\VideoBundle\\Controller\\DefaultController::indexAction',  'sort' => 'createdAt',  'direction' => 'desc',  '_route' => 'mew_pipe_video_homepage',);
+        }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }

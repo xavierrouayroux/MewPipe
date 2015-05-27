@@ -99,6 +99,12 @@ fos_user:
     firewall_name: main
     user_class: MewPipe\UserBundle\Entity\User
 
+fp_open_id:
+    db_driver: orm
+    identity_class: MewPipe\UserBundle\Entity\OpenIdIdentity
+    template:
+            engine: twig
+
 stof_doctrine_extensions:
     default_locale: en_US
     uploadable:

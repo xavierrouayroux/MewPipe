@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d8599811b4b184e034a384c86ea1a939",
+    "hash": "46171302e408301b5f4b9433f35a112b",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -808,6 +808,67 @@
             "time": "2015-04-02 20:40:18"
         },
         {
+            "name": "fp/openid-bundle",
+            "version": "dev-master",
+            "target-dir": "Fp/OpenIdBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/formapro/FpOpenIdBundle.git",
+                "reference": "7ea397057e8d2b7a444a90094c99d83deac840bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/formapro/FpOpenIdBundle/zipball/7ea397057e8d2b7a444a90094c99d83deac840bd",
+                "reference": "7ea397057e8d2b7a444a90094c99d83deac840bd",
+                "shasum": ""
+            },
+            "require": {
+                "lightopenid/lightopenid": "*",
+                "php": ">=5.3.2",
+                "symfony/symfony": "~2.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*@stable"
+            },
+            "suggest": {
+                "doctrine/mongodb-odm": "If you want store identities to mongodb",
+                "doctrine/orm": "If you want store identities to database"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Fp\\OpenIdBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Community",
+                    "homepage": "https://github.com/formapro/FpOpenIdBundle/contributors"
+                },
+                {
+                    "name": "Kotlyar Maksim",
+                    "email": "kotlyar.maksim@gmail.com"
+                }
+            ],
+            "description": "Symfony2 OpenID security extension",
+            "homepage": "https://github.com/formapro/FpOpenIdBundle",
+            "keywords": [
+                "Authentication",
+                "OpenId",
+                "security"
+            ],
+            "time": "2014-12-11 12:00:50"
+        },
+        {
             "name": "friendsofsymfony/user-bundle",
             "version": "dev-master",
             "source": {
@@ -1360,6 +1421,33 @@
             "time": "2014-09-15 12:42:36"
         },
         {
+            "name": "lightopenid/lightopenid",
+            "version": "v0.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.gitorious.org/lightopenid/lightopenid.git",
+                "reference": "9d42dc24e4dd34121c98a6491bc3ef7933a68a19"
+            },
+            "require": {
+                "php": ">=5.2.3"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "./"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "homepage": "http://code.google.com/p/lightopenid/",
+            "keywords": [
+                "OpenId"
+            ],
+            "time": "2013-10-27 16:25:49"
+        },
+        {
             "name": "monolog/monolog",
             "version": "1.13.1",
             "source": {
@@ -1587,16 +1675,16 @@
         },
         {
             "name": "sensiolabs/security-checker",
-            "version": "v2.0.2",
+            "version": "v2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/security-checker.git",
-                "reference": "cecb1397087dc9c733796eda6e9d121336039cdc"
+                "reference": "cde03c48d490d805ef1349e5108f8b3085981ead"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/security-checker/zipball/cecb1397087dc9c733796eda6e9d121336039cdc",
-                "reference": "cecb1397087dc9c733796eda6e9d121336039cdc",
+                "url": "https://api.github.com/repos/sensiolabs/security-checker/zipball/cde03c48d490d805ef1349e5108f8b3085981ead",
+                "reference": "cde03c48d490d805ef1349e5108f8b3085981ead",
                 "shasum": ""
             },
             "require": {
@@ -1628,7 +1716,7 @@
                 }
             ],
             "description": "A security checker for your composer.lock",
-            "time": "2015-04-21 07:52:05"
+            "time": "2015-05-22 14:21:04"
         },
         {
             "name": "stof/doctrine-extensions-bundle",
@@ -1926,16 +2014,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.5.11",
+            "version": "v2.5.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "bb96c155fb677c0139e36dccb84e765066879c28"
+                "reference": "5c83d12f2fbe93622e6ae2aad72f4033adbebe36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/bb96c155fb677c0139e36dccb84e765066879c28",
-                "reference": "bb96c155fb677c0139e36dccb84e765066879c28",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/5c83d12f2fbe93622e6ae2aad72f4033adbebe36",
+                "reference": "5c83d12f2fbe93622e6ae2aad72f4033adbebe36",
                 "shasum": ""
             },
             "require": {
@@ -2035,7 +2123,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2015-04-01 16:00:43"
+            "time": "2015-05-26 23:43:20"
         },
         {
             "name": "twig/extensions",
@@ -2202,7 +2290,8 @@
     "stability-flags": {
         "friendsofsymfony/user-bundle": 20,
         "stof/doctrine-extensions-bundle": 20,
-        "knplabs/knp-disqus-bundle": 20
+        "knplabs/knp-disqus-bundle": 20,
+        "fp/openid-bundle": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

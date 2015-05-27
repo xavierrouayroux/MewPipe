@@ -19,6 +19,7 @@
       <parameter key="FOSUserBundle">FOS\UserBundle\FOSUserBundle</parameter>
       <parameter key="StofDoctrineExtensionsBundle">Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle</parameter>
       <parameter key="KnpPaginatorBundle">Knp\Bundle\PaginatorBundle\KnpPaginatorBundle</parameter>
+      <parameter key="FpOpenIdBundle">Fp\OpenIdBundle\FpOpenIdBundle</parameter>
       <parameter key="MewPipeVideoBundle">MewPipe\VideoBundle\MewPipeVideoBundle</parameter>
       <parameter key="MewPipeUserBundle">MewPipe\UserBundle\MewPipeUserBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
@@ -639,6 +640,16 @@
     <parameter key="knp_paginator.template.filtration">KnpPaginatorBundle:Pagination:filtration.html.twig</parameter>
     <parameter key="knp_paginator.template.sortable">KnpPaginatorBundle:Pagination:sortable_link.html.twig</parameter>
     <parameter key="knp_paginator.page_range">5</parameter>
+    <parameter key="security.authentication.provider.fp_openid.class">Fp\OpenIdBundle\Security\Core\Authentication\Provider\OpenIdAuthenticationProvider</parameter>
+    <parameter key="security.authentication.listener.fp_openid.class">Fp\OpenIdBundle\Security\Http\Firewall\OpenIdAuthenticationListener</parameter>
+    <parameter key="security.access.fp_openid_authenticated_voter.class">Fp\OpenIdBundle\Security\Core\Authorization\Voter\OpenIdAuthenticatedVoter</parameter>
+    <parameter key="fp_openid.relying_party.light_open_id.class">Fp\OpenIdBundle\Bridge\RelyingParty\LightOpenIdRelyingParty</parameter>
+    <parameter key="fp_openid.relying_party.recovered_failure.class">Fp\OpenIdBundle\RelyingParty\RecoveredFailureRelyingParty</parameter>
+    <parameter key="fp_openid.relying_party.collection.class">Fp\OpenIdBundle\RelyingParty\RelyingPartyCollection</parameter>
+    <parameter key="fp_openid.template.engine">twig</parameter>
+    <parameter key="fp_openid.identity_manager.class">Fp\OpenIdBundle\Entity\IdentityManager</parameter>
+    <parameter key="fp_openid.user_manager.class">Fp\OpenIdBundle\Model\UserManager</parameter>
+    <parameter key="fp_openid.model.identity.class">MewPipe\UserBundle\Entity\OpenIdIdentity</parameter>
     <parameter key="web_profiler.controller.profiler.class">Symfony\Bundle\WebProfilerBundle\Controller\ProfilerController</parameter>
     <parameter key="web_profiler.controller.router.class">Symfony\Bundle\WebProfilerBundle\Controller\RouterController</parameter>
     <parameter key="web_profiler.controller.exception.class">Symfony\Bundle\WebProfilerBundle\Controller\ExceptionController</parameter>
@@ -3142,8 +3153,16 @@
           </service>
         </argument>
         <argument type="service">
+          <service class="Fp\OpenIdBundle\Security\Core\Authentication\Provider\OpenIdAuthenticationProvider" public="false">
+            <argument>main</argument>
+            <argument type="service" id="mew_pipe.openid_user_manager"/>
+            <argument type="service" id="security.user_checker"/>
+            <argument>true</argument>
+          </service>
+        </argument>
+        <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>555db6d65e9c3</argument>
+            <argument>55659fec8bb88</argument>
           </service>
         </argument>
       </argument>
@@ -3163,9 +3182,8 @@
     <service id="security.access.decision_manager" class="Symfony\Component\Security\Core\Authorization\AccessDecisionManager" public="false">
       <argument type="collection">
         <argument type="service">
-          <service class="Symfony\Component\Security\Core\Authorization\Voter\RoleHierarchyVoter" public="false">
-            <tag name="security.voter" priority="245"/>
-            <argument type="service" id="security.role_hierarchy"/>
+          <service class="Fp\OpenIdBundle\Security\Core\Authorization\Voter\OpenIdAuthenticatedVoter" public="false">
+            <tag name="security.voter"/>
           </service>
         </argument>
         <argument type="service">
@@ -3176,6 +3194,12 @@
             </argument>
             <argument type="service" id="security.authentication.trust_resolver"/>
             <argument type="service" id="security.role_hierarchy" on-invalid="null"/>
+          </service>
+        </argument>
+        <argument type="service">
+          <service class="Symfony\Component\Security\Core\Authorization\Voter\RoleHierarchyVoter" public="false">
+            <tag name="security.voter" priority="245"/>
+            <argument type="service" id="security.role_hierarchy"/>
           </service>
         </argument>
         <argument type="service">
@@ -3251,6 +3275,28 @@
                 <call method="add">
                   <argument type="service">
                     <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
+                      <argument>^/login_openid$</argument>
+                    </service>
+                  </argument>
+                  <argument type="collection">
+                    <argument>IS_AUTHENTICATED_ANONYMOUSLY</argument>
+                  </argument>
+                  <argument>null</argument>
+                </call>
+                <call method="add">
+                  <argument type="service">
+                    <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
+                      <argument>^/secured_area</argument>
+                    </service>
+                  </argument>
+                  <argument type="collection">
+                    <argument>IS_AUTHENTICATED_OPENID</argument>
+                  </argument>
+                  <argument>null</argument>
+                </call>
+                <call method="add">
+                  <argument type="service">
+                    <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
                       <argument>^/login$</argument>
                     </service>
                   </argument>
@@ -3308,6 +3354,15 @@
             <argument type="service" id="security.context"/>
             <argument type="collection">
               <argument type="service" id="fos_user.user_provider.username"/>
+              <argument type="service" id="mew_pipe.openid_user_manager"/>
+              <argument type="service">
+                <service class="Symfony\Bridge\Doctrine\Security\User\EntityUserProvider" public="false">
+                  <argument type="service" id="doctrine"/>
+                  <argument>MewPipeUserBundle:User</argument>
+                  <argument>username</argument>
+                  <argument>null</argument>
+                </service>
+              </argument>
             </argument>
             <argument>main</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
@@ -3413,9 +3468,79 @@
           </service>
         </argument>
         <argument type="service">
+          <service class="Fp\OpenIdBundle\Security\Http\Firewall\OpenIdAuthenticationListener" public="false">
+            <tag name="security.remember_me_aware" id="main" provider="security.user.provider.concrete.openid_user_manager"/>
+            <argument type="service" id="security.context"/>
+            <argument type="service" id="security.authentication.manager"/>
+            <argument type="service" id="security.authentication.session_strategy"/>
+            <argument type="service">
+              <service class="Symfony\Component\Security\Http\HttpUtils" public="false">
+                <argument type="service" id="router" on-invalid="null"/>
+                <argument type="service" id="router" on-invalid="null"/>
+              </service>
+            </argument>
+            <argument>main</argument>
+            <argument type="service">
+              <service class="Symfony\Component\Security\Http\Authentication\DefaultAuthenticationSuccessHandler" public="false">
+                <argument type="service">
+                  <service class="Symfony\Component\Security\Http\HttpUtils" public="false">
+                    <argument type="service" id="router" on-invalid="null"/>
+                    <argument type="service" id="router" on-invalid="null"/>
+                  </service>
+                </argument>
+                <argument type="collection">
+                  <argument key="login_path">/login_openid</argument>
+                  <argument key="target_path_parameter">_target_path</argument>
+                  <argument key="always_use_default_target_path">false</argument>
+                  <argument key="default_target_path">/</argument>
+                  <argument key="use_referer">false</argument>
+                </argument>
+                <call method="setProviderKey">
+                  <argument>main</argument>
+                </call>
+              </service>
+            </argument>
+            <argument type="service">
+              <service class="Symfony\Component\Security\Http\Authentication\DefaultAuthenticationFailureHandler" public="false">
+                <argument type="service" id="http_kernel"/>
+                <argument type="service">
+                  <service class="Symfony\Component\Security\Http\HttpUtils" public="false">
+                    <argument type="service" id="router" on-invalid="null"/>
+                    <argument type="service" id="router" on-invalid="null"/>
+                  </service>
+                </argument>
+                <argument type="collection">
+                  <argument key="login_path">/login_openid</argument>
+                  <argument key="failure_path">null</argument>
+                  <argument key="failure_forward">false</argument>
+                  <argument key="failure_path_parameter">_failure_path</argument>
+                </argument>
+                <argument type="service" id="monolog.logger.security" on-invalid="null"/>
+              </service>
+            </argument>
+            <argument type="collection">
+              <argument key="login_path">/login_openid</argument>
+              <argument key="check_path">/login_check_openid</argument>
+              <argument key="create_user_if_not_exists">true</argument>
+              <argument key="required_attributes" type="collection">
+                <argument>contact/email</argument>
+              </argument>
+              <argument key="use_forward">false</argument>
+              <argument key="require_previous_session">true</argument>
+              <argument key="target_path_parameter">_target_path</argument>
+              <argument key="optional_attributes" type="collection"/>
+            </argument>
+            <argument type="service" id="monolog.logger.security" on-invalid="null"/>
+            <argument type="service" id="debug.event_dispatcher" on-invalid="null"/>
+            <call method="setRelyingParty">
+              <argument type="service" id="fp_openid.relying_party.default"/>
+            </call>
+          </service>
+        </argument>
+        <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.context"/>
-            <argument>555db6d65e9c3</argument>
+            <argument>55659fec8bb88</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
           </service>
         </argument>
@@ -3426,6 +3551,28 @@
             <argument type="service" id="security.access.decision_manager"/>
             <argument type="service">
               <service class="Symfony\Component\Security\Http\AccessMap" public="false">
+                <call method="add">
+                  <argument type="service">
+                    <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
+                      <argument>^/login_openid$</argument>
+                    </service>
+                  </argument>
+                  <argument type="collection">
+                    <argument>IS_AUTHENTICATED_ANONYMOUSLY</argument>
+                  </argument>
+                  <argument>null</argument>
+                </call>
+                <call method="add">
+                  <argument type="service">
+                    <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
+                      <argument>^/secured_area</argument>
+                    </service>
+                  </argument>
+                  <argument type="collection">
+                    <argument>IS_AUTHENTICATED_OPENID</argument>
+                  </argument>
+                  <argument>null</argument>
+                </call>
                 <call method="add">
                   <argument type="service">
                     <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
@@ -3496,7 +3643,7 @@
                   <argument type="service" id="router" on-invalid="null"/>
                 </service>
               </argument>
-              <argument>/login</argument>
+              <argument>/login_openid</argument>
               <argument>false</argument>
             </service>
           </argument>
@@ -3919,6 +4066,7 @@
               <argument key="GedmoTranslator">Gedmo\Translator\Entity</argument>
               <argument key="GedmoLoggable">Gedmo\Loggable\Entity</argument>
               <argument key="GedmoTree">Gedmo\Tree\Entity</argument>
+              <argument key="FpOpenIdBundle">Fp\OpenIdBundle\Entity</argument>
               <argument key="MewPipeVideoBundle">MewPipe\VideoBundle\Entity</argument>
               <argument key="MewPipeUserBundle">MewPipe\UserBundle\Entity</argument>
             </argument>
@@ -4030,6 +4178,19 @@
                     </service>
                   </argument>
                   <argument>MewPipe\UserBundle\Entity</argument>
+                </call>
+                <call method="addDriver">
+                  <argument type="service">
+                    <service class="Doctrine\ORM\Mapping\Driver\SimplifiedXmlDriver" public="false">
+                      <argument type="collection">
+                        <argument key="/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/fp/openid-bundle/Fp/OpenIdBundle/Resources/config/doctrine">Fp\OpenIdBundle\Entity</argument>
+                      </argument>
+                      <call method="setGlobalBasename">
+                        <argument>mapping</argument>
+                      </call>
+                    </service>
+                  </argument>
+                  <argument>Fp\OpenIdBundle\Entity</argument>
                 </call>
                 <call method="addDriver">
                   <argument type="service">
@@ -4279,6 +4440,27 @@
     <service id="knp_paginator.twig.extension.pagination" class="Knp\Bundle\PaginatorBundle\Twig\Extension\PaginationExtension">
       <tag name="twig.extension"/>
       <argument type="service" id="knp_paginator.helper.processor"/>
+    </service>
+    <service id="fp_openid.relying_party.light_open_id" class="Fp\OpenIdBundle\Bridge\RelyingParty\LightOpenIdRelyingParty"/>
+    <service id="fp_openid.relying_party.recovered_failure" class="Fp\OpenIdBundle\RelyingParty\RecoveredFailureRelyingParty"/>
+    <service id="fp_openid.relying_party.default" class="Fp\OpenIdBundle\RelyingParty\RelyingPartyCollection">
+      <call method="append">
+        <argument type="service" id="fp_openid.relying_party.recovered_failure"/>
+      </call>
+      <call method="append">
+        <argument type="service" id="fp_openid.relying_party.light_open_id"/>
+      </call>
+    </service>
+    <service id="fp_openid.identity_manager" class="Fp\OpenIdBundle\Entity\IdentityManager">
+      <argument type="service" id="doctrine.orm.default_entity_manager"/>
+      <argument>MewPipe\UserBundle\Entity\OpenIdIdentity</argument>
+    </service>
+    <service id="fp_openid.user_manager" class="Fp\OpenIdBundle\Model\UserManager">
+      <argument type="service" id="fp_openid.identity_manager"/>
+    </service>
+    <service id="mew_pipe.openid_user_manager" class="MewPipe\UserBundle\Entity\OpenIdUserManager">
+      <argument type="service" id="fp_openid.identity_manager"/>
+      <argument type="service" id="doctrine.orm.default_entity_manager"/>
     </service>
     <service id="web_profiler.controller.profiler" class="Symfony\Bundle\WebProfilerBundle\Controller\ProfilerController">
       <argument type="service" id="router" on-invalid="null"/>
@@ -4627,6 +4809,10 @@
       <call method="addPath">
         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/knplabs/knp-paginator-bundle/Knp/Bundle/PaginatorBundle/Resources/views</argument>
         <argument>KnpPaginator</argument>
+      </call>
+      <call method="addPath">
+        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/fp/openid-bundle/Fp/OpenIdBundle/Resources/views</argument>
+        <argument>FpOpenId</argument>
       </call>
       <call method="addPath">
         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/VideoBundle/Resources/views</argument>

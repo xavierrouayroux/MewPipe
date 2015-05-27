@@ -110,6 +110,8 @@
   'KnpPaginatorBundle:Pagination:sortable_link.html.twig' => '/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/knplabs/knp-paginator-bundle/Knp/Bundle/PaginatorBundle/Resources/views/Pagination/sortable_link.html.twig',
   'KnpPaginatorBundle:Pagination:twitter_bootstrap_pagination.html.twig' => '/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/knplabs/knp-paginator-bundle/Knp/Bundle/PaginatorBundle/Resources/views/Pagination/twitter_bootstrap_pagination.html.twig',
   'KnpPaginatorBundle:Pagination:twitter_bootstrap_v3_pagination.html.twig' => '/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/knplabs/knp-paginator-bundle/Knp/Bundle/PaginatorBundle/Resources/views/Pagination/twitter_bootstrap_v3_pagination.html.twig',
+  'FpOpenIdBundle::layout.html.twig' => '/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/fp/openid-bundle/Fp/OpenIdBundle/Resources/views/layout.html.twig',
+  'FpOpenIdBundle:Security:login.html.twig' => '/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/fp/openid-bundle/Fp/OpenIdBundle/Resources/views/Security/login.html.twig',
   'MewPipeVideoBundle:Default:index.html.twig' => '/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/VideoBundle/Resources/views/Default/index.html.twig',
   'MewPipeVideoBundle:Video:upload.html.twig' => '/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/VideoBundle/Resources/views/Video/upload.html.twig',
   'MewPipeUserBundle:Default:index.html.twig' => '/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/UserBundle/Resources/views/Default/index.html.twig',

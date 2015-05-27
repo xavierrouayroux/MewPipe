@@ -22,7 +22,8 @@
         "gedmo/doctrine-extensions":      "~2.3.1",
         "stof/doctrine-extensions-bundle": "~1.1@dev",
         "knplabs/knp-paginator-bundle": "^2.4",
-        "knplabs/knp-disqus-bundle": "dev-master"
+        "knplabs/knp-disqus-bundle": "dev-master",
+        "fp/openid-bundle": "dev-master"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"

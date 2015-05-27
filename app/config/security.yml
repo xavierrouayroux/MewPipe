@@ -9,7 +9,12 @@ security:
     providers:
         fos_userbundle:
                     id: fos_user.user_provider.username
-
+        # the order is important here
+        openid_user_manager:
+            id: mew_pipe.openid_user_manager # the name of the service
+        # keep your database provider below! it may look like this:
+        database:
+            entity: { class: MewPipeUserBundle:User, property: username }
     firewalls:
         main:
                     pattern: ^/
@@ -18,8 +23,20 @@ security:
                         csrf_provider: security.csrf.token_manager # Use form.csrf_provider instead for Symfony <2.4
                     logout:       true
                     anonymous:    true
+                    #openId parts
+                    fp_openid:
+                        login_path:                   /login_openid
+                        check_path:                   /login_check_openid
+                        create_user_if_not_exists: true # so createUserFromIdentity method will be called
+                        relying_party:                fp_openid.relying_party.default
+                        provider: openid_user_manager # cf below
+                        required_attributes:
+                            - contact/email
+
 
     access_control:
+            - { path: ^/login_openid$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+            - { path: ^/secured_area, role: IS_AUTHENTICATED_OPENID }
             - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
             - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
             - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }

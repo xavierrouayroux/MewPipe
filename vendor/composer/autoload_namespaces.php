@@ -20,6 +20,7 @@ return array(
     'Knp\\Bundle\\DisqusBundle' => array($vendorDir . '/knplabs/knp-disqus-bundle'),
     'Incenteev\\ParameterHandler' => array($vendorDir . '/incenteev/composer-parameter-handler'),
     'Gedmo\\' => array($vendorDir . '/gedmo/doctrine-extensions/lib'),
+    'Fp\\OpenIdBundle' => array($vendorDir . '/fp/openid-bundle'),
     'Doctrine\\ORM\\' => array($vendorDir . '/doctrine/orm/lib'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src'),
     'Doctrine\\DBAL\\' => array($vendorDir . '/doctrine/dbal/lib'),

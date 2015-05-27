@@ -1,9 +1,5 @@
-mew_pipe_video_homepage:
-    path: /home
-    defaults: { _controller: MewPipeVideoBundle:Default:index, sort:'createdAt', direction:'desc'}
-
 mew_pipe_video_homepage_pager:
-    path:     /home/page/{page}/{max}/{sort}/{direction}
+    path:     /page/{page}/{max}/{sort}/{direction}
     defaults: { _controller: MewPipeVideoBundle:Default:index, page:1, max:5, sort:'createdAt', direction:'desc' }
     requirements:
         page: \d+
