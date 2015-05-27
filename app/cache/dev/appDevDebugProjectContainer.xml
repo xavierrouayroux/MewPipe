@@ -16,11 +16,11 @@
       <parameter key="AsseticBundle">Symfony\Bundle\AsseticBundle\AsseticBundle</parameter>
       <parameter key="DoctrineBundle">Doctrine\Bundle\DoctrineBundle\DoctrineBundle</parameter>
       <parameter key="SensioFrameworkExtraBundle">Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle</parameter>
-      <parameter key="MewPipeUserBundle">MewPipe\UserBundle\MewPipeUserBundle</parameter>
       <parameter key="FOSUserBundle">FOS\UserBundle\FOSUserBundle</parameter>
       <parameter key="StofDoctrineExtensionsBundle">Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle</parameter>
       <parameter key="KnpPaginatorBundle">Knp\Bundle\PaginatorBundle\KnpPaginatorBundle</parameter>
       <parameter key="MewPipeVideoBundle">MewPipe\VideoBundle\MewPipeVideoBundle</parameter>
+      <parameter key="MewPipeUserBundle">MewPipe\UserBundle\MewPipeUserBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
       <parameter key="SensioGeneratorBundle">Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle</parameter>
@@ -1647,12 +1647,6 @@
         <argument>security</argument>
       </call>
       <call method="addResource">
-        <argument>xlf</argument>
-        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/UserBundle/Resources/translations/messages.fr.xlf</argument>
-        <argument>fr</argument>
-        <argument>messages</argument>
-      </call>
-      <call method="addResource">
         <argument>yml</argument>
         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ar.yml</argument>
         <argument>ar</argument>
@@ -2111,6 +2105,12 @@
       <call method="addResource">
         <argument>xlf</argument>
         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/VideoBundle/Resources/translations/messages.fr.xlf</argument>
+        <argument>fr</argument>
+        <argument>messages</argument>
+      </call>
+      <call method="addResource">
+        <argument>xlf</argument>
+        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/UserBundle/Resources/translations/messages.fr.xlf</argument>
         <argument>fr</argument>
         <argument>messages</argument>
       </call>
@@ -3143,7 +3143,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>555ca312df286</argument>
+            <argument>555db6d65e9c3</argument>
           </service>
         </argument>
       </argument>
@@ -3415,7 +3415,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.context"/>
-            <argument>555ca312df286</argument>
+            <argument>555db6d65e9c3</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
           </service>
         </argument>
@@ -3919,8 +3919,8 @@
               <argument key="GedmoTranslator">Gedmo\Translator\Entity</argument>
               <argument key="GedmoLoggable">Gedmo\Loggable\Entity</argument>
               <argument key="GedmoTree">Gedmo\Tree\Entity</argument>
-              <argument key="MewPipeUserBundle">MewPipe\UserBundle\Entity</argument>
               <argument key="MewPipeVideoBundle">MewPipe\VideoBundle\Entity</argument>
+              <argument key="MewPipeUserBundle">MewPipe\UserBundle\Entity</argument>
             </argument>
           </call>
           <call method="setMetadataCacheImpl">
@@ -3944,8 +3944,8 @@
                         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Translator/Entity</argument>
                         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Loggable/Entity</argument>
                         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity</argument>
-                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/UserBundle/Entity</argument>
                         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/VideoBundle/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/UserBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -3960,8 +3960,8 @@
                         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Translator/Entity</argument>
                         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Loggable/Entity</argument>
                         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity</argument>
-                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/UserBundle/Entity</argument>
                         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/VideoBundle/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/UserBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -3976,8 +3976,8 @@
                         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Translator/Entity</argument>
                         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Loggable/Entity</argument>
                         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity</argument>
-                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/UserBundle/Entity</argument>
                         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/VideoBundle/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/UserBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -3992,8 +3992,8 @@
                         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Translator/Entity</argument>
                         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Loggable/Entity</argument>
                         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity</argument>
-                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/UserBundle/Entity</argument>
                         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/VideoBundle/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/UserBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -4008,12 +4008,12 @@
                         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Translator/Entity</argument>
                         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Loggable/Entity</argument>
                         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity</argument>
-                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/UserBundle/Entity</argument>
                         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/VideoBundle/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/UserBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
-                  <argument>MewPipe\UserBundle\Entity</argument>
+                  <argument>MewPipe\VideoBundle\Entity</argument>
                 </call>
                 <call method="addDriver">
                   <argument type="service">
@@ -4024,12 +4024,12 @@
                         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Translator/Entity</argument>
                         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Loggable/Entity</argument>
                         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity</argument>
-                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/UserBundle/Entity</argument>
                         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/VideoBundle/Entity</argument>
+                        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/UserBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
-                  <argument>MewPipe\VideoBundle\Entity</argument>
+                  <argument>MewPipe\UserBundle\Entity</argument>
                 </call>
                 <call method="addDriver">
                   <argument type="service">
@@ -4621,10 +4621,6 @@
         <argument>Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/UserBundle/Resources/views</argument>
-        <argument>MewPipeUser</argument>
-      </call>
-      <call method="addPath">
         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/friendsofsymfony/user-bundle/Resources/views</argument>
         <argument>FOSUser</argument>
       </call>
@@ -4635,6 +4631,10 @@
       <call method="addPath">
         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/VideoBundle/Resources/views</argument>
         <argument>MewPipeVideo</argument>
+      </call>
+      <call method="addPath">
+        <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/UserBundle/Resources/views</argument>
+        <argument>MewPipeUser</argument>
       </call>
       <call method="addPath">
         <argument>/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>

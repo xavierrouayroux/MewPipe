@@ -25,33 +25,68 @@
                              </label>
                          </div>
                      </div>
+
+                     <div class="col-xs-3">
+                         <div class="dataTables_length">
+                             <label>
+                                 <select class="form-control" size="1" id="maxPerPage">
+                                     <option {% if (sort == 'createdAt') %} selected {% endif %} value="{{path ('mew_pipe_video_homepage_pager', {'page' : page, 'max': max,   'sort': 'createdAt', 'direction': direction})  }}">date de création</option>
+                                     <option {% if (sort == 'views') %} selected {% endif %} value="{{path ('mew_pipe_video_homepage_pager', {'page' : page, 'max': max, 'sort': 'views', 'direction': direction})  }}">nombres de vue</option>
+                                     <option {% if (sort == 'title') %} selected {% endif %} value="{{path ('mew_pipe_video_homepage_pager', {'page' : page, 'max': max, 'sort': 'title', 'direction': direction})  }}">titre</option>
+                                 </select>
+                                 trier par
+                             </label>
+                         </div>
+                     </div>
+
+                     <div class="col-xs-3">
+                         <div class="dataTables_length">
+                             <label>
+                                 <select class="form-control" size="1" id="maxPerPage">
+                                     <option {% if (direction == 'acs') %} selected {% endif %} value="{{path ('mew_pipe_video_homepage_pager', {'page' : page, 'max': max,   'sort': sort, 'direction': 'asc'})  }}">Croissant</option>
+                                     <option {% if (direction == 'desc') %} selected {% endif %} value="{{path ('mew_pipe_video_homepage_pager', {'page' : page, 'max': max, 'sort': sort, 'direction': 'desc'})  }}">Décroissant</option>
+                                 </select>
+                                 Direction
+                             </label>
+                         </div>
+                     </div>
                  </div>
 
                  <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-hover table-bordered datatables paginated">
-                     <thead>
-                     <tr>
-                         <td>{{ knp_pagination_sortable(pagination, 'date de création', 'createdAt') }}</td>
-                         <td>{{ knp_pagination_sortable(pagination, 'nombre de vue'|trans, 'views') }}</td>
-                         <td>{{ knp_pagination_sortable(pagination, 'titre', 'title') }}</td>
-                         <td>description</td>
-                     </tr>
-                     </thead>
                      <tbody>
                      {% if length == 0 %}
                          <tr>
-                             <td colspan="3">
+                             <td colspan="4>
                                  <center>{% trans %}no_element_available_show_yet{% endtrans %}</center>
                              </td>
                          </tr>
                      {% endif %}
+                     <div class="row">
+                     {% set elementInLine = 1 %}
                      {% for data in pagination %}
-                         <tr>
-                             <td>{{ data.createdAt|date('Y-m-d H:i:s') }}</td>
-                             <td>{{ data.views }}</td>
-                             <td>{{ data.title }}</td>
-                             <td>{{ data.description }}</td>
-                         <tr/>
+                     {% if elementInLine > 4 %}
+                     {%  set elementInLine = 0 %}
+                         </div><div class="row">
+                     {% endif %}
+
+                        <div class="col-md-3">
+                            <div class="text-primary text-center">{{ data.title }}</div>
+                            <a href="google.fr" class="gallerypic" title="">
+                            <img src="{{ asset('img/'~ data.pathToImage) }}" alt="{{ data.title }}" class="img-thumbnail img-responsive">
+                            <span class="zoom-icon">
+                                Information sur la vidéo :<br>
+                                Titre : {{ data.title }}<br>
+                                Description : {{ data.description }}<br>
+                                nombre de vues : {{ data.views }}
+                            </span>
+                            </a>
+                            <div class="text-info text-center">{{ data.views }} vues</div>
+                        </div>
+
+
+                     {%   set elementInLine = elementInLine +1 %}
                      {% endfor %}
+                     </div>
                      {% if pagination.getTotalItemCount() > 0 %}
                          <tr>
                              <td colspan="2">
@@ -95,6 +130,7 @@
          </div>
      </div>
              </div>
+
 
  {% endblock %}
 

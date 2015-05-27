@@ -77,7 +77,6 @@
   'SwiftmailerBundle:Collector:swiftmailer.html.twig' => '/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/symfony/swiftmailer-bundle/Resources/views/Collector/swiftmailer.html.twig',
   'DoctrineBundle:Collector:db.html.twig' => '/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig',
   'DoctrineBundle:Collector:explain.html.twig' => '/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig',
-  'MewPipeUserBundle:Default:index.html.twig' => '/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/UserBundle/Resources/views/Default/index.html.twig',
   'FOSUserBundle:ChangePassword:changePassword.html.twig' => '/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/friendsofsymfony/user-bundle/Resources/views/ChangePassword/changePassword.html.twig',
   'FOSUserBundle:ChangePassword:changePassword_content.html.twig' => '/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/friendsofsymfony/user-bundle/Resources/views/ChangePassword/changePassword_content.html.twig',
   'FOSUserBundle:Group:edit.html.twig' => '/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/friendsofsymfony/user-bundle/Resources/views/Group/edit.html.twig',
@@ -113,5 +112,6 @@
   'KnpPaginatorBundle:Pagination:twitter_bootstrap_v3_pagination.html.twig' => '/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/vendor/knplabs/knp-paginator-bundle/Knp/Bundle/PaginatorBundle/Resources/views/Pagination/twitter_bootstrap_v3_pagination.html.twig',
   'MewPipeVideoBundle:Default:index.html.twig' => '/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/VideoBundle/Resources/views/Default/index.html.twig',
   'MewPipeVideoBundle:Video:upload.html.twig' => '/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/VideoBundle/Resources/views/Video/upload.html.twig',
+  'MewPipeUserBundle:Default:index.html.twig' => '/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/src/MewPipe/UserBundle/Resources/views/Default/index.html.twig',
   '::base.html.twig' => '/Users/xavierrouayroux/Desktop/NetBeans_project/MewPipe/app/Resources/views/base.html.twig',
 );
